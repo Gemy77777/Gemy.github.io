@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    /* Adjusted styles for mobile devices */
+    @media (max-width: 768px) {
+      form {
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      #exampleCheck1{
+        cursor: pointer;
+      }
+      #exampleInputEmail1 {
+        width: 100%;
+        transition: width 1s;
+        background-color: #ffffff; /* Changed background color to white */
+      }
+      #exampleInputEmail1:hover {
+        width: 100%;
+        cursor: pointer;
+      }
+      #exampleInputPassword1 {
+        width: 100%;
+        transition: width 1s;
+        background-color: #ffffff; /* Changed background color to white */
+      }
+      #exampleInputPassword1:hover {
+        width: 100%;
+        cursor: pointer;
+      }
+      body {
+        background-color: #c1c1c1;
+        background-size: auto;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      nav {
+        background-color: #7c7c7c;
+        cursor: pointer;
+      }
+      #search-bar {
+        width: 100%;
+        transition: 2s;
+      }
+      #search-bar:hover {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    @media (min-width: 768px){
+      form {
+      margin-left: 510px;
+      margin-top: 70px;
+    }
+    #exampleCheck1{
+      cursor: pointer;
+    }
+    #exampleInputEmail1 {
+      width: 180px;
+      transition: width 1s;
+      background-color: #ffffff; /* Changed background color to white */
+    }
+    #exampleInputEmail1:hover {
+      width: 250px;
+      cursor: pointer;
+    }
+    #exampleInputPassword1 {
+      width: 180px;
+      transition: width 1s;
+      background-color: #ffffff; /* Changed background color to white */
+    }
+    #exampleInputPassword1:hover {
+      width: 250px;
+      cursor: pointer;
+    }
+    body {
+      background-color: #c1c1c1;
+      background-size: auto;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    nav {
+      background-color: #7c7c7c;
+      cursor: pointer;
+    }
+    #search-bar {
+      width: 150px;
+      transition: 2s;
+    }
+    #search-bar:hover {
+      width: 200px;
+      cursor: pointer;
+    }
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightgrey">
+      <a class="navbar-brand" href="#">Gemy</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >contact <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >About<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="search-bar"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <form class="form was-validated">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          required
+        >
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">Please fill out this field</div>
+      </div>
+        <small
+          id="emailHelp"
+          class="form-text text-muted"
+          style="color: #ffffff"
+          >We'll never share your email with anyone else.</small
+        >
+      </div><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Password"
+          required
+        />
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">Please fill out this field</div>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1" style="color: #2f2f2f;">Remember me</label>
+      </div>
+      <div class="mb-3"></div>
+      <!-- Added space between check me out and submit button -->
+      <button type="submit" class="btn btn-success" id="submit">Log in</button>
+      <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+    </form>
+  </body>
+</html>
+
