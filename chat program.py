@@ -1,0 +1,6 @@
+input("press any key to continue")
+name=input("name:")
+email_or_phone =input("email or mobile number:")
+print("great! " +name.title()+ " we will contact you soon")
+input("press any key to exit")
+print("love you " +name.title()+ " thanks for using our service!") 
