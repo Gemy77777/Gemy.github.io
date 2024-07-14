@@ -46,6 +46,9 @@ background-color: #ffffff; /* Changed background color to white */
 width: 75%;
 cursor: pointer;
 }
+#EmailAddress{
+color: #fff;
+}
 #exampleInputPassword1 {
 width: 50%;
 transition: width 1s;
@@ -54,6 +57,12 @@ background-color: #ffffff; /* Changed background color to white */
 #exampleInputPassword1:hover {
 width: 70%;
 cursor: pointer;
+}
+#Password{
+    color: #fff;
+}
+#checkbox{
+    color: #fff;
 }
 body {
 background-color: #212121; /* Changed background color to a light grey */
@@ -94,6 +103,10 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+::selection{
+    background-color: black;
+    color: yellow;
+    }
 }
 /* Adjusted styles for mobile devices in landscape mode */
 @media (max-width: 600px) and (orientation: landscape) {
@@ -122,6 +135,7 @@ background-color: #ffffff; /* Changed background color to white */
 width: 70%;
 cursor: pointer;
 }
+
 body {
 background-color: #b1b1b1; /* Changed background color to a light grey */
 background-size: auto;
@@ -163,6 +177,10 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+::selection{
+    background-color: black;
+    color: yellow;
+}
 }
 /* Adjusted styles for tablet devices in portrait mode */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
@@ -190,6 +208,9 @@ background-color: #ffffff; /* Changed background color to white */
 #exampleInputPassword1:hover {
 width: 75%;
 cursor: pointer;
+}
+#checkbox{
+    color: #000000;
 }
 body {
 background-color: #a1a1a1; /* Changed background color to a light grey */
@@ -231,6 +252,10 @@ font-optical-sizing: auto;
 font-weight: 100;
 font-style: normal;
 font-size: medium;
+}
+::selection{
+    background-color: black;
+    color: yellow;
 }
 }
 /* Adjusted styles for tablet devices in landscape mode */
@@ -301,82 +326,96 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+#checkbox{
+    color: #000000;
+}
+::selection{
+    background-color: black;
+    color: yellow;
+    }
 }
 /* Adjusted styles for laptop devices in portrait mode */
 @media (min-width: 901px) and (max-width: 1600px) and (orientation: landscape) {
 /* Adjusted styles for laptop devices in portrait mode */
 form {
-    margin-left: 510px;
-    margin-top: 70px;
-    }
-    #exampleCheck1{
-    cursor: pointer;
-    }
-    #exampleInputEmail1 {
-    width: 260px;
-    transition: width 1s;
-    background-color: #ffffff; /* Changed background color to white */
-    }
-    #exampleInputEmail1:hover {
-    width: 300px;
-    cursor: pointer;
-    }
-    #exampleInputPassword1 {
-    width: 180px;
-    transition: width 1s;
-    background-color: #ffffff; /* Changed background color to white */
-    }
-    #exampleInputPassword1:hover {
-    width: 250px;
-    cursor: pointer;
-    }
-    body {
-    background-color: #b1b1b1; /* Changed background color to a light grey */
-    background-size: auto;
-    background-size: cover;
-    background-attachment: fixed;
-    }
-    nav {
-    background-color: #7300ff; /* Changed nav background color to a nice blue */
-    cursor: pointer;
-    }
-    #search-bar {
-    width: 150px;
-    transition: 2s;
-    background-color: #ebebeb;
+margin-left: 510px;
+margin-top: 70px;
+}
+#exampleCheck1{
+cursor: pointer;
+}
+#exampleInputEmail1 {
+width: 260px;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+}
+#exampleInputEmail1:hover {
+width: 300px;
+cursor: pointer;
+}
+#exampleInputPassword1 {
+width: 180px;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+}
+#exampleInputPassword1:hover {
+width: 250px;
+cursor: pointer;
+}
+#checkbox{
     color: #000000;
-    }
-    #search-bar:hover {
-    width: 200px;
-    cursor: pointer;
-    }
-    #submit{
-    width: 80px;
-    transition: 1.5s;
-    }
-    #submit:hover{
-    width:95px;
-    }
-    #reset{
-    width: 80px;
-    transition: 1.5s;
-    }
-    #reset:hover{
-    width:95px;
-    }
-    #brand{
-    font-family: "Playwrite CU", cursive;
-    font-optical-sizing: auto;
-    font-weight:100;
-    font-style: normal;
-    font-size: medium;
+}
+body {
+background-color: #b1b1b1; /* Changed background color to a light grey */
+background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+}
+nav {
+background-color: #7300ff; /* Changed nav background color to a nice blue */
+cursor: pointer;
+}
+#search-bar {
+width: 150px;
+transition: 2s;
+background-color: #ebebeb;
+color: #000000;
+}
+#search-bar:hover {
+width: 200px;
+cursor: pointer;
+}
+#submit{
+width: 80px;
+transition: 1.5s;
+}
+#submit:hover{
+width:95px;
+}
+#reset{
+width: 80px;
+transition: 1.5s;
+}
+#reset:hover{
+width:95px;
+}
+#brand{
+font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight:100;
+font-style: normal;
+font-size: medium;
+}
+::selection{
+    background-color: rgb(105, 105, 105);
+    color: yellow;
     }
 }
 /* Adjusted styles for laptop devices in landscape mode */
 </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
-<a class="navbar-brand" href="#" id="brand">Dareen</a>
+<a class="navbar-brand" href="#" id="brand">Gemy</a>
 <button
 class="navbar-toggler"
 type="button"
@@ -475,7 +514,7 @@ aria-label="Toggle navigation"
 </div>
 <div class="form-check">
 <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-<label class="form-check-label" for="exampleCheck1" style="color: #2f2f2f;">Remember me</label>
+<label class="form-check-label" for="exampleCheck1" id="checkbox">Remember me</label>
 </div>
 <div class="mb-3"></div>
 <!-- Added space between check me out and submit button -->
