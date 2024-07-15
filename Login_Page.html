@@ -25,6 +25,13 @@ $('#navbarDropdown').click(function(){
 $('#dropdown_menu').slideToggle(500);
 });
 });
+$(document).ready(function() {
+$('#burger_icon').click(function(){
+$('#navbarSupportedContent').slideToggle(1700);
+});
+});
+
+
 </script>
 </head> 
 <style>
@@ -41,6 +48,7 @@ cursor: pointer;
 width: 68%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 3.5px 2px 2.5px rgb(82, 82, 82);
 }
 #exampleInputEmail1:hover {
 width: 75%;
@@ -48,27 +56,31 @@ cursor: pointer;
 }
 #EmailAddress{
 color: #fff;
+text-shadow: 1px 1px 3px rgb(104, 104, 104);
 }
 #exampleInputPassword1 {
 width: 50%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 3.5px 2px 2.5px rgb(82, 82, 82);
 }
 #exampleInputPassword1:hover {
 width: 70%;
 cursor: pointer;
 }
 #Password{
-    color: #fff;
+color: #fff;
+text-shadow: 1px 1px 3px rgb(104, 104, 104);
 }
 #checkbox{
-    color: #fff;
+color: #fff;
 }
 body {
-background-color: #212121; /* Changed background color to a light grey */
+background-color: #272727; /* Changed background color to a light grey */
 background-size: auto;
 background-size: cover;
 background-attachment: fixed;
+min-height: 850px;
 }
 nav {
 background-color: #0084ff; /* Changed nav background color to a beautiful blue */
@@ -85,16 +97,22 @@ cursor: pointer;
 #submit {
 width: 80px;
 transition: 1.5s;
+box-shadow: 0.7px 0.3px 0.4px rgb(139, 139, 139);
 }
 #submit:hover {
 width: 90px;
+box-shadow: 3.5px 2px 2.5px rgb(139, 139, 139);
+margin: 4px;
 }
 #reset {
 transition: 1.5s;
 width: 80px;
+box-shadow: 0.7px 0.3px 0.4px rgb(139, 139, 139);
 }
 #reset:hover {
 width: 90px;
+box-shadow: 3.5px 2px 2.5px rgb(139, 139, 139);
+margin: 4px;
 }
 #brand {
 font-family: "Playwrite CU", cursive;
@@ -103,10 +121,22 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+#xx{
+position: relative;
+top: 5px;
+}
+#yy{
+position: relative;
+top: 5px;
+}
 ::selection{
-    background-color: black;
-    color: yellow;
-    }
+background-color: black;
+color: yellow;
+}
+.nav-link{
+border-bottom: 0.1px solid #eee;
+margin: 2px;
+}
 }
 /* Adjusted styles for mobile devices in landscape mode */
 @media (max-width: 600px) and (orientation: landscape) {
@@ -178,8 +208,8 @@ font-style: normal;
 font-size: medium;
 }
 ::selection{
-    background-color: black;
-    color: yellow;
+background-color: black;
+color: yellow;
 }
 }
 /* Adjusted styles for tablet devices in portrait mode */
@@ -210,7 +240,7 @@ width: 75%;
 cursor: pointer;
 }
 #checkbox{
-    color: #000000;
+color: #000000;
 }
 body {
 background-color: #a1a1a1; /* Changed background color to a light grey */
@@ -246,6 +276,7 @@ transition: 1.5s;
 #reset:hover {
 width: 105px;
 }
+
 #brand {
 font-family: "Playwrite CU", cursive;
 font-optical-sizing: auto;
@@ -254,23 +285,28 @@ font-style: normal;
 font-size: medium;
 }
 ::selection{
-    background-color: black;
-    color: yellow;
+background-color: black;
+color: yellow;
 }
 }
 /* Adjusted styles for tablet devices in landscape mode */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
 form {
 margin-left: 30px;
-margin-top: 40px;
+margin-top: 16px;
 }
 #exampleCheck1 {
 cursor: pointer;
+position: relative;
+bottom: 28px;
 }
 #exampleInputEmail1 {
 width: 75%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 5px;
 }
 #exampleInputEmail1:hover {
 width: 85%;
@@ -280,13 +316,16 @@ cursor: pointer;
 width: 65%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 30px;
 }
 #exampleInputPassword1:hover {
 width: 80%;
 cursor: pointer;
 }
 body {
-background-color: #c1c1c1; /* Changed background color to a light grey */
+background-color: #a9a9a9; /* Changed background color to a light grey */
 background-size: auto;
 background-size: cover;
 background-attachment: fixed;
@@ -308,16 +347,32 @@ cursor: pointer;
 #submit {
 width: 100px;
 transition: 1.5s;
+position: relative;
+bottom: 28px;
 }
 #submit:hover {
 width: 115px;
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+margin: 5px;
 }
 #reset {
 width: 100px;
 transition: 1.5s;
+position: relative;
+bottom: 28px;
 }
 #reset:hover {
 width: 115px;
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+margin: 5px;
+}
+#EmailAddress{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+}
+#Password{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+position: relative;
+bottom: 28px;
 }
 #brand {
 font-family: "Playwrite CU", cursive;
@@ -326,16 +381,26 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+#xx{
+position: relative;
+bottom: 30px;
+}
+#yy{
+position: relative;
+bottom: 3px;
+}
 #checkbox{
-    color: #000000;
+color: #000000;
+position: relative;
+bottom: 28px;
 }
 ::selection{
-    background-color: black;
-    color: yellow;
-    }
+background-color: black;
+color: yellow;
+}
 }
 /* Adjusted styles for laptop devices in portrait mode */
-@media (min-width: 901px) and (max-width: 1600px) and (orientation: landscape) {
+@media (min-width: 901px) and (max-width: 2200px) and (orientation: landscape) {
 /* Adjusted styles for laptop devices in portrait mode */
 form {
 margin-left: 510px;
@@ -346,8 +411,9 @@ cursor: pointer;
 }
 #exampleInputEmail1 {
 width: 260px;
-transition: width 1s;
-background-color: #ffffff; /* Changed background color to white */
+transition: width 1.5s;
+background-color: #ffffff;/* Changed background color to white */
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
 }
 #exampleInputEmail1:hover {
 width: 300px;
@@ -355,15 +421,16 @@ cursor: pointer;
 }
 #exampleInputPassword1 {
 width: 180px;
-transition: width 1s;
+transition: width 1.5s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
 }
 #exampleInputPassword1:hover {
 width: 250px;
 cursor: pointer;
 }
 #checkbox{
-    color: #000000;
+color: #000000;
 }
 body {
 background-color: #b1b1b1; /* Changed background color to a light grey */
@@ -387,17 +454,23 @@ cursor: pointer;
 }
 #submit{
 width: 80px;
-transition: 1.5s;
+transition: 1s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
 }
 #submit:hover{
 width:95px;
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+margin: 5px;
 }
 #reset{
 width: 80px;
-transition: 1.5s;
+transition: 1s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
 }
 #reset:hover{
 width:95px;
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+margin: 5px;
 }
 #brand{
 font-family: "Playwrite CU", cursive;
@@ -407,14 +480,100 @@ font-style: normal;
 font-size: medium;
 }
 ::selection{
-    background-color: rgb(105, 105, 105);
-    color: yellow;
-    }
+background-color: rgb(105, 105, 105);
+color: yellow;
+}
+#EmailAddress{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+}
+#Password{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+}
+}
+@media (min-width: 901px) and (max-width: 1600px) and (orientation: portrait) {
+/* Adjusted styles for Ipads devices */
+form {
+margin-left: 20px;
+margin-top: 30px;
+}
+#exampleCheck1 {
+cursor: pointer;
+}
+#exampleInputEmail1 {
+width: 70%;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+}
+#exampleInputEmail1:hover {
+width: 80%;
+cursor: pointer;
+}
+#exampleInputPassword1 {
+width: 60%;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+}
+#exampleInputPassword1:hover {
+width: 75%;
+cursor: pointer;
+}
+#checkbox{
+color: #000000;
+}
+body {
+background-color: #a1a1a1; /* Changed background color to a light grey */
+background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+}
+nav {
+background-color: #007bff; /* Changed nav background color to a beautiful blue */
+cursor: pointer;
+}
+#search-bar {
+width: 120px;
+transition: 2s;
+background-color: #ebebeb;
+color: #000000;
+}
+#search-bar:hover {
+width: 150px;
+cursor: pointer;
+}
+#submit {
+width: 90px;
+transition: 1.5s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#submit:hover {
+width: 105px;
+box-shadow: 5.5px 4.5px 4.5px rgb(71, 71, 71);
+}
+#reset {
+width: 90px;
+transition: 1.5s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#reset:hover {
+width: 105px;
+box-shadow: 5.5px 4.5px 4.5px rgb(71, 71, 71);
+}
+#brand {
+font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-size: medium;
+}
+::selection{
+background-color: black;
+color: yellow;
+}
 }
 /* Adjusted styles for laptop devices in landscape mode */
 </style>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="box-shadow: 1.5px 1px 1px rgb(71, 71, 71)" >
 <a class="navbar-brand" href="#" id="brand">Gemy</a>
 <button
 class="navbar-toggler"
@@ -424,62 +583,63 @@ data-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent"
 aria-expanded="false"
 aria-label="Toggle navigation"
-
+id="burger_icon"
 >
-<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon" id="burger_icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >Home <span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >contact <span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">Profile</a>
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >About<span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item dropdown">
-    <a
-        class="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdown"
-        role="button"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-    >
-        Dropdown
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown_menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-    </li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>Home <span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>contact <span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Profile</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>About<span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item dropdown">
+<a
+class="nav-link dropdown-toggle"
+href="#"
+id="navbarDropdown"
+role="button"
+data-toggle="dropdown"
+aria-haspopup="true"
+aria-expanded="false"
+>
+Dropdown
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown_menu">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Something else here</a>
+</div>
+</li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
-    <input
-    id="search-bar"
-    class="form-control mr-sm-2"
-    type="search"
-    placeholder="Search"
-    aria-label="Search"
-    />
-    <button class="btn btn-primary my-2 my-sm-0" type="submit" id="search_btn" style="background-color: #0e008e;">
-    Search
-    </button>
+<input
+id="search-bar"
+class="form-control mr-sm-2"
+type="search"
+placeholder="Search"
+aria-label="Search"
+style="box-shadow: 3px 2px 2px rgb(71, 71, 71);"
+/>
+<button class="btn btn-primary my-2 my-sm-0" type="submit" id="search_btn" style="background-color: #0e008e; box-shadow: 3px 2px 2px rgb(71, 71, 71);">
+Search
+</button>
 </form>
 </div>
 </nav>
@@ -487,37 +647,39 @@ aria-label="Toggle navigation"
 <div class="form-group">
 <label for="exampleInputEmail1" id="EmailAddress">Email address</label>
 <input
-    type="email"
-    class="form-control"
-    id="exampleInputEmail1"
-    aria-describedby="emailHelp"
-    placeholder="Enter email"
-    required
-    autofocus
+type="email"
+class="form-control"
+id="exampleInputEmail1"
+aria-describedby="emailHelp"
+placeholder="Enter email"
+required
+autofocus
 >
 <div class="valid-feedback">Valid</div>
-<div class="invalid-feedback">Please fill in this field</div>
+<div class="invalid-feedback" id="yy">Please fill in this field</div>
 </div><br>
 <div class="form-group">
 <label for="exampleInputPassword1" id="Password">Password</label>
 <input
-    type="password"
-    class="form-control"
-    id="exampleInputPassword1"
-    placeholder="Password"
-    required
-    minlength="8"
-    maxlength="20"
+type="password"
+class="form-control"
+id="exampleInputPassword1"
+placeholder="Password"
+required
+minlength="8"
+maxlength="20"
 />
 <div class="valid-feedback">Valid</div>
-<div class="invalid-feedback">Password must be at least 8 characters.</div>
+<div class="invalid-feedback" id="xx">Password must be at least 8 characters.</div>
 </div>
 <div class="form-check">
 <input type="checkbox" class="form-check-input" id="exampleCheck1" />
 <label class="form-check-label" for="exampleCheck1" id="checkbox">Remember me</label>
 </div>
 <div class="mb-3"></div>
-<!-- Added space between check me out and submit button -->
+<!-- 
+Added space between check me out and submit button 
+-->
 <button type="submit" class="btn btn-success" id="submit">Log in</button>
 <button type="reset" class="btn btn-primary" id="reset">Reset</button>
 </form>
@@ -526,4 +688,5 @@ aria-label="Toggle navigation"
 // alert('Ba7bk <3')
 </script>
 </body>
+</html>
 </html>
