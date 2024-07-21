@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+<link rel="stylesheet" href="Css/MyCss.css" />
+<link rel="stylesheet" href="Css/normalize.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="Css/all.min.css" />
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+/>
+<link rel="stylesheet" href="Css/normalize.css" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link
+href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+rel="stylesheet"
+/>
+<!-- for web icon photo 
+<link rel="icon" type="image/x-icon" href="" />
+-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+@media (min-width: 901px) and (max-width: 2200px) and (orientation: landscape) {
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: url(Photos/the_starry_night-wallpaper-2560x1600.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.wrapper {
+width: 420px;
+height: 495px;
+color: #fff;
+background-color: transparent;
+border: 2px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(20px);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding: 30px 40px;
+}
+.wrapper h1 {
+font-size: 2.5rem;
+justify-content: center;
+text-align: center;
+}
+.wrapper .inputbox {
+width: 100%;
+height: 50px;
+margin: 30px 0;
+position: relative;
+}
+.inputbox input {
+width: 100%;
+height: 100%;
+outline: none;
+background: transparent;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 40px;
+font-size: 16px;
+color: #fff;
+padding: 20px 45px 20px 20px;
+}
+.wrapper .remember-me {
+display: flex;
+justify-content: space-between;
+margin: -16px 0 15px;
+font-size: 14.5px;
+}
+.remember-me a {
+margin-right: 4px;
+color: #fff;
+position: relative;
+top: 2px;
+}
+.inputbox input::placeholder {
+color: #ffffff;
+}
+.inputbox i {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 20px;
+}
+.wrapper .btn {
+width: 100%;
+height: 45px;
+background-color: #fff;
+margin-bottom: 10px;
+border: none;
+outline: none;
+border-radius: 40px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+color: black;
+font-weight: 600;
+}
+.wrapper .register-link {
+text-align: center;
+font-size: 14.5px;
+margin-top: 20px;
+}
+.register-link p a {
+color: #fff;
+font-size: 600;
+}
+p {
+margin-top: 20px;
+position: relative;
+top: 10px;
+}
+.register-link p a:hover {
+text-decoration: underline;
+}
+.wrap-check-63 .checkbox {
+display: table-cell;
+width: 100%;
+height: 100%;
+vertical-align: middle;
+text-align: center;
+}
+
+.wrap-check-63 label {
+display: inline-block;
+color: #ffffff;
+cursor: pointer;
+position: relative;
+top: -2px;
+}
+.wrap-check-63 label span {
+display: inline-block;
+position: relative;
+background-color: transparent;
+width: 23px;
+height: 23px;
+transform-origin: center;
+border: 2px solid #333;
+border-radius: 50%;
+vertical-align: middle;
+margin-right: 10px;
+transition: background-color 150ms 200ms,
+transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+}
+.wrap-check-63 label span:before {
+content: "";
+width: 0px;
+height: 2px;
+border-radius: 2px;
+background: #333;
+position: absolute;
+transform: rotate(45deg);
+top: 11px;
+left: 7px;
+transition: width 50ms ease 50ms;
+transform-origin: 0% 0%;
+}
+.wrap-check-63 label span:after {
+content: "";
+width: 0;
+height: 2px;
+border-radius: 2px;
+background: #333;
+position: absolute;
+transform: rotate(305deg);
+top: 14px;
+left: 8px;
+transition: width 50ms ease;
+transform-origin: 0% 0%;
+}
+.wrap-check-63 label:hover span:before {
+width: 5px;
+transition: width 100ms ease;
+}
+.wrap-check-63 label:hover span:after {
+width: 10px;
+transition: width 150ms ease 100ms;
+}
+
+.wrap-check-63 input[type="checkbox"] {
+display: none;
+}
+.wrap-check-63 input[type="checkbox"]:checked + label span {
+background-color: #333;
+transform: scale(1.25);
+}
+.wrap-check-63 input[type="checkbox"]:checked + label span:after {
+width: 10px;
+background: #fff;
+transition: width 150ms ease 100ms;
+margin-left: -1px;
+}
+.wrap-check-63 input[type="checkbox"]:checked + label span:before {
+width: 5px;
+background: #fff;
+transition: width 150ms ease 100ms;
+margin-left: -2px;
+}
+.wrap-check-63 input[type="checkbox"]:checked + label:hover span {
+background-color: #333;
+transform: scale(1.25);
+}
+.wrap-check-63 input[type="checkbox"]:checked + label:hover span:after {
+width: 10px;
+background: #fff;
+transition: width 150ms ease 100ms;
+}
+.wrap-check-63 input[type="checkbox"]:checked + label:hover span:before {
+width: 5px;
+background: #fff;
+transition: width 150ms ease 100ms;
+}
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+border: 0 solid;
+box-sizing: border-box;
+}
+.btn-77 {
+-webkit-tap-highlight-color: 
+transparent;
+appearance: button;
+-webkit-appearance: button;
+background-color: 
+transparent;
+background-image: none;
+color: 
+#fff;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 100%;
+line-height: 1.5;
+margin: 0;
+-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+mask-image: radial-gradient(#000, #fff);
+padding: 0;
+letter-spacing: 4px;
+backdrop-filter: blur(80px);
+}
+.btn-77:disabled {
+cursor: default;
+}
+.btn-77:-moz-focusring {
+outline: auto;
+}
+.btn-77 svg {
+display: block;
+/* vertical-align: middle; */
+}
+.btn-77 [hidden] {
+display: none;
+}
+.btn-77 {
+-webkit-animation: pulse 1s infinite;
+animation: pulse 1s infinite;
+border: 1px solid;
+border-radius: 999px;
+box-shadow: 0 0 0 10px transparent;
+box-sizing: border-box;
+display: block;
+font-weight: 800;
+-webkit-mask-image: none;
+mask-image: none;
+overflow: hidden;
+padding: 15px 20px;
+position: relative;
+text-transform: uppercase;
+width: 100%;
+}
+@-webkit-keyframes pulse {
+0% {
+box-shadow: 0 0 0 0 
+#fff;
+}
+}
+@keyframes pulse {
+0% {
+box-shadow: 0 0 0 0 
+#fff;
+}
+}
+}
+@media (max-width: 600px) and (orientation: portrait) {
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #f1ceff no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.wrapper {
+width: 324px;
+height: 414px;
+color: #fff;
+background-color: #b700ff;
+border: 2px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding: 30px 40px;
+}
+.wrapper h1 {
+font-size: 2.5rem;
+justify-content: center;
+text-align: center;
+}
+.wrapper .inputbox {
+width: 100%;
+height: 50px;
+margin: 30px 0;
+position: relative;
+}
+.inputbox input {
+width: 100%;
+height: 100%;
+outline: none;
+background: transparent;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 40px;
+font-size: 16px;
+color: #fff;
+padding: 20px 45px 20px 20px;
+}
+.wrapper .remember-me {
+display: flex;
+justify-content: space-between;
+margin: -16px 0 15px;
+font-size: 14.5px;
+}
+.remember-me a {
+margin-right: 4px;
+}
+.inputbox input::placeholder {
+color: #ffffff;
+}
+.inputbox i {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 20px;
+}
+.remember-me label input {
+accent-color: #fff;
+margin-right: 3px;
+}
+.remember-me a {
+color: #fff;
+text-decoration: none;
+}
+.remember-me a:hover {
+text-decoration: underline;
+}
+.wrapper .btn {
+width: 100%;
+height: 45px;
+background-color: #fff;
+margin-bottom: 10px;
+border: none;
+outline: none;
+border-radius: 40px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+color: black;
+font-weight: 600;
+}
+.wrapper .register-link {
+text-align: center;
+font-size: 14.5px;
+margin-top: 20px;
+}
+.register-link p a {
+color: #fff;
+font-size: 600;
+}
+p {
+margin-top: -22px;
+}
+.register-link p a:hover {
+text-decoration: underline;
+}
+}
+</style>
+<body>
+<div class="wrapper">
+<h1>Login</h1>
+<div class="inputbox">
+<input type="text" placeholder="username" required />
+<i class="bx bxs-user"></i>
+</div>
+<div class="inputbox">
+<input type="text" placeholder="Password" required />
+<i class="bx bxs-lock-alt"></i>
+</div>
+<div class="remember-me">
+<div class="wrap-check-63">
+<input type="checkbox" id="check-63" name="check" value="" />
+<label for="check-63"> <span></span>Remember me </label>
+</div>
+<a href="#">Forgot Password?</a>
+</div>
+<button class="btn-77">Login</button>
+<div
+class="icons"
+style="
+display: flex;
+justify-content:space-evenly;
+font-size: 16px;
+font-size: 31px;
+position: relative;
+top: 20px;
+"
+>
+<a href="https://web.facebook.com/gamaleldin.sherief/" style="color: white;" target="_blank"
+><i class="bx bxl-facebook-circle"></i
+></a>
+<a href="https://www.instagram.com/gamaleldinsherief/"style="color: white;" target="_blank"
+><i class="bx bxl-instagram"></i
+></a>
+<a href="https://github.com/Gemy77777/my-project"style="color: white;" target="_blank"
+><i class="bx bxl-github"></i
+></a>
+</div>
+
+<div class="register-link">
+<p>Don't have an account? <a href="#">Register</a></p>
+</div>
+</div>
+<script src=""></script>
+</body>
+</html>
