@@ -16,6 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="Photos/2997.jpg" />
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -25,14 +30,31 @@ $('#navbarDropdown').click(function(){
 $('#dropdown_menu').slideToggle(500);
 });
 });
+$(document).ready(function() {
+$('#burger_icon').click(function(){
+$('#navbarSupportedContent').slideToggle(1700);
+});
+});
+$(document).ready(function() {
+$(document).click(function() {
+$('#dropdown_menu').slideUp(500);
+});
+});
 </script>
 </head> 
 <style>
+*{
+box-sizing: border-box;
+}
 /* Adjusted styles for mobile devices in portrait mode */
 @media (max-width: 600px) and (orientation: portrait) {
+*{
+overflow: hidden;
+}
 form {
 margin-left: 10px;
 margin-top: 20px;
+min-height: 550px;
 }
 #exampleCheck1 {
 cursor: pointer;
@@ -41,25 +63,39 @@ cursor: pointer;
 width: 68%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 3.5px 2px 2.5px rgb(82, 82, 82);
 }
 #exampleInputEmail1:hover {
 width: 75%;
 cursor: pointer;
 }
+#EmailAddress{
+color: #fff;
+text-shadow: 1px 1px 3px rgb(104, 104, 104);
+}
 #exampleInputPassword1 {
 width: 50%;
 transition: width 1s;
 background-color: #ffffff; /* Changed background color to white */
+box-shadow: 3.5px 2px 2.5px rgb(82, 82, 82);
 }
 #exampleInputPassword1:hover {
 width: 70%;
 cursor: pointer;
 }
+#Password{
+color: #fff;
+text-shadow: 1px 1px 3px rgb(104, 104, 104);
+}
+#checkbox{
+color: #fff;
+}
 body {
-background-color: #212121; /* Changed background color to a light grey */
+background-color: #272727; /* Changed background color to a light grey */
 background-size: auto;
 background-size: cover;
 background-attachment: fixed;
+min-height: 850px;
 }
 nav {
 background-color: #0084ff; /* Changed nav background color to a beautiful blue */
@@ -74,18 +110,26 @@ width: 90%;
 cursor: pointer;
 }
 #submit {
-width: 80px;
-transition: 1.5s;
+width: 90px;
+transition: 0.7s;
+position: relative;
+bottom: 2px;
+margin: 3px;
+box-shadow: 1.5px 1.5px 1.5px rgb(71, 71, 71);
 }
 #submit:hover {
-width: 90px;
+box-shadow: 3.5px 2px 2.5px rgb(139, 139, 139);
 }
 #reset {
-transition: 1.5s;
-width: 80px;
+width: 90px;
+transition: 0.7s;
+position: relative;
+bottom: 2px;
+margin: 3px;
+box-shadow: 1.5px 1.5px 1.5px rgb(71, 71, 71);
 }
 #reset:hover {
-width: 90px;
+box-shadow: 3.5px 2px 2.5px rgb(139, 139, 139);
 }
 #brand {
 font-family: "Playwrite CU", cursive;
@@ -93,6 +137,49 @@ font-optical-sizing: auto;
 font-weight: 100;
 font-style: normal;
 font-size: medium;
+}
+#small-label-password{
+position: relative;
+top: 5px;
+}
+#small-label-email{
+position: relative;
+top: 5px;
+}
+::selection{
+background-color: black;
+color: yellow;
+}
+.nav-link{
+border-bottom: 0.1px solid #eee;
+margin: 2px;
+}
+#form-inline-space{
+min-height: 40px;
+}
+/* Adjusted icons for mobile devices */
+#facebook_icon, #GitHub_icon, #Instgram_icon {
+font-size: 20px;
+box-sizing: border-box;
+margin: 5px;
+position: relative;
+display: inline-flex;
+cursor: pointer;
+font-size: 30px;
+margin-left: 10px;
+margin-right: 10px;
+top: 100px;
+border-radius: 30%;
+box-shadow: 2px 2.5px 2.5px rgb(71, 71, 71);
+transition-duration: 0.1s;
+left: -50px;
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon:hover {
+box-shadow: 4px 3.5px 3.5px rgb(71, 71, 71);
+box-sizing: border-box;
+}
+#form-validate{
+min-width: 400px;
 }
 }
 /* Adjusted styles for mobile devices in landscape mode */
@@ -122,6 +209,7 @@ background-color: #ffffff; /* Changed background color to white */
 width: 70%;
 cursor: pointer;
 }
+
 body {
 background-color: #b1b1b1; /* Changed background color to a light grey */
 background-size: auto;
@@ -163,9 +251,415 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+::selection{
+background-color: black;
+color: yellow;
+}
+.nav-link{
+border-bottom: 0.1px solid #eee;
+margin: 2px;
+}
 }
 /* Adjusted styles for tablet devices in portrait mode */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+form {
+margin-left: 20px;
+margin-top: 30px;
+min-height: 500px;
+}
+#exampleCheck1 {
+cursor: pointer;
+}
+#exampleInputEmail1 {
+width: 45%;
+transition: 1s;
+background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 3px; /* Changed background color to white */
+}
+#exampleInputEmail1:hover {
+width: 50%;
+cursor: pointer;
+}
+#EmailAddress{
+position: relative;
+left: 5px;
+}
+#exampleInputPassword1 {
+width: 40%;
+transition: 1s;
+background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 3px; /* Changed background color to white */
+}
+#exampleInputPassword1:hover {
+width: 45%;
+cursor: pointer;
+}
+#Password{
+position: relative;
+left: 5px;
+}
+#checkbox{
+color: #000000;
+}
+body {
+background-color: #a1a1a1; /* Changed background color to a light grey */
+background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+min-height: 500px;
+overflow-x: hidden; /* Removed horizontal scrollbar */
+}
+nav {
+background-color: #007bff; /* Changed nav background color to a beautiful blue */
+cursor: pointer;
+}
+#search-bar {
+width: 120px;
+transition: 2s;
+background-color: #ebebeb;
+color: #000000;
+}
+#search-bar:hover {
+width: 150px;
+cursor: pointer;
+}
+#submit {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 2px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#submit:hover {
+box-shadow: 5px 3px 3px rgb(71, 71, 71);
+}
+#reset {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 2px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#reset:hover {
+box-shadow: 5px 3px 3px rgb(71, 71, 71);
+}
+#brand {
+font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-size: medium;
+}
+::selection{
+background-color: black;
+color: yellow;
+}
+.nav-link{
+border-bottom: 0.1px solid #eee;
+margin: 2px;
+}
+#search_btn{
+background-color: #0e008e; 
+box-shadow: 3px 2px 2px rgb(71, 71, 71);
+transition-duration:0.5;
+}
+#search_btn:hover{
+box-shadow: 6px 4px 4px rgb(71, 71, 71);
+}
+#small-label-email{
+position: relative;
+left: 5px;
+letter-spacing: 0.5px;
+}
+#small-label-password{
+position: relative;
+left: 5px;
+letter-spacing: 0.5px;
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon{
+position: relative;
+display: inline-flex;
+cursor: pointer;
+align-self: center;
+font-size: 40px;
+margin-left: 10px;
+margin-right: 10px;
+left: 28%;
+top: 150px;
+border-radius: 50%;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+transition-duration: 0.1s;
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon:hover{
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+}
+/* Adjusted styles for tablet devices in landscape mode */
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
+form {
+margin-left: 30px;
+margin-top: 16px;
+min-height: 500px;
+}
+#exampleCheck1 {
+cursor: pointer;
+position: relative;
+bottom: 10px;
+}
+#checkbox{
+position: relative;
+bottom: 10px;
+color: #000000;
+}
+#exampleInputEmail1 {
+width: 65%;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 5px;
+}
+#exampleInputEmail1:hover {
+width: 70%;
+cursor: pointer;
+}
+#exampleInputPassword1 {
+width: 55%;
+transition: width 1s;
+background-color: #ffffff; /* Changed background color to white */
+box-shadow: 5px 4px 3px rgb(71, 71, 71);
+position: relative;
+bottom: 30px;
+}
+#exampleInputPassword1:hover {
+width: 60%;
+cursor: pointer;
+}
+body {
+background-color: #a9a9a9; /* Changed background color to a light grey */
+background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+min-height: 500px;
+}
+nav {
+background-color: #7d0000; /* Changed nav background color to a nice blue */
+cursor: pointer;
+}
+#search-bar {
+width: 180px;
+transition: 2s;
+background-color: #ebebeb;
+color: #000000;
+}
+#search-bar:hover {
+width: 220px;
+cursor: pointer;
+}
+#submit {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 28px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#submit:hover {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 28px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#reset {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 28px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#reset:hover {
+width: 100px;
+transition: 0.3s;
+position: relative;
+bottom: 28px;
+margin: 5px;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+}
+#brand {
+font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-size: medium;
+}
+::selection{
+background-color: black;
+color: yellow;
+}
+.nav-link{
+border-bottom: 0.1px solid #eee;
+margin: 2px;
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon{
+position: relative;
+display: inline-flex;
+cursor: pointer;
+align-self: center;
+font-size: 40px;
+margin-left: 10px;
+margin-right: 10px;
+left: 30%;
+top: 150px;
+border-radius: 50%;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+transition-duration: 0.1s;
+left: 21%;
+top: 62px;
+
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon:hover{
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#search_btn{
+background-color: #0e008e; 
+box-shadow: 3px 2px 2px rgb(71, 71, 71);
+transition-duration:0.5;
+}
+#search_btn:hover{
+box-shadow: 6px 4px 4px rgb(71, 71, 71);
+}
+#navbar-expand{
+display: inline-flex;
+align-content: flex-start;
+}
+#form-inline-space{
+min-height: 40px;
+}
+}
+@media (min-width: 901px) and (max-width: 2200px) and (orientation: landscape) {
+/* Adjusted styles for laptop devices in portrait mode */
+form {
+margin-left: 510px;
+margin-top: 70px;
+}
+#exampleCheck1{
+cursor: pointer;
+}
+#exampleInputEmail1 {
+width: 260px;
+transition: width 0.9s;
+background-color: #ffffff;/* Changed background color to white */
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#exampleInputEmail1:hover {
+width: 300px;
+cursor: pointer;
+}
+#exampleInputPassword1 {
+width: 180px;
+transition: width 0.9s;
+background-color: #ffffff; /* Changed background color to white */
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#exampleInputPassword1:hover {
+width: 250px;
+cursor: pointer;
+}
+#checkbox{
+color: #000000;
+}
+body {
+background-color: #b1b1b1; /* Changed background color to a light grey */
+background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+}
+nav {
+background-color: #7300ff; /* Changed nav background color to a nice blue */
+cursor: pointer;
+}
+#search-bar {
+width: 150px;
+transition: 1s;
+background-color: #ebebeb;
+color: #000000;
+}
+#search-bar:hover {
+width: 200px;
+cursor: pointer;
+}
+#submit{
+width: 80px;
+transition: 0.2s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+margin: 4px;
+}
+#submit:hover{
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#reset{
+width: 80px;
+transition: 0.2s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+margin: 4px;
+}
+#reset:hover{
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#brand{
+font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight:100;
+font-style: normal;
+font-size: medium;
+}
+::selection{
+background-color: rgb(105, 105, 105);
+color: yellow;
+}
+#EmailAddress{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+}
+#Password{
+text-shadow: 1px 1px 3px rgb(38, 38, 38);
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon{
+position: relative;
+display: inline-flex;
+cursor: pointer;
+align-self: center;
+font-size: 40px;
+margin-left: 10px;
+margin-right: 10px;
+left: 45%;
+top: 220px;
+border-radius: 50%;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
+transition-duration: 0.1s;
+}
+#facebook_icon, #GitHub_icon, #Instgram_icon:hover{
+box-shadow: 6px 5px 5px rgb(71, 71, 71);
+}
+#search_btn{
+background-color: #0e008e; 
+box-shadow: 3px 2px 2px rgb(71, 71, 71);
+transition-duration:0.5;
+}
+#search_btn:hover{
+box-shadow: 6px 4px 4px rgb(71, 71, 71);
+}
+}
+@media (min-width: 901px) and (max-width: 1600px) and (orientation: portrait) {
+/* Adjusted styles for Ipads devices */
 form {
 margin-left: 20px;
 margin-top: 30px;
@@ -191,6 +685,9 @@ background-color: #ffffff; /* Changed background color to white */
 width: 75%;
 cursor: pointer;
 }
+#checkbox{
+color: #000000;
+}
 body {
 background-color: #a1a1a1; /* Changed background color to a light grey */
 background-size: auto;
@@ -214,16 +711,20 @@ cursor: pointer;
 #submit {
 width: 90px;
 transition: 1.5s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
 }
 #submit:hover {
 width: 105px;
+box-shadow: 5.5px 4.5px 4.5px rgb(71, 71, 71);
 }
 #reset {
 width: 90px;
 transition: 1.5s;
+box-shadow: 3px 2.5px 2.5px rgb(71, 71, 71);
 }
 #reset:hover {
 width: 105px;
+box-shadow: 5.5px 4.5px 4.5px rgb(71, 71, 71);
 }
 #brand {
 font-family: "Playwrite CU", cursive;
@@ -232,151 +733,16 @@ font-weight: 100;
 font-style: normal;
 font-size: medium;
 }
+::selection{
+background-color: black;
+color: yellow;
 }
-/* Adjusted styles for tablet devices in landscape mode */
-@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
-form {
-margin-left: 30px;
-margin-top: 40px;
-}
-#exampleCheck1 {
-cursor: pointer;
-}
-#exampleInputEmail1 {
-width: 75%;
-transition: width 1s;
-background-color: #ffffff; /* Changed background color to white */
-}
-#exampleInputEmail1:hover {
-width: 85%;
-cursor: pointer;
-}
-#exampleInputPassword1 {
-width: 65%;
-transition: width 1s;
-background-color: #ffffff; /* Changed background color to white */
-}
-#exampleInputPassword1:hover {
-width: 80%;
-cursor: pointer;
-}
-body {
-background-color: #c1c1c1; /* Changed background color to a light grey */
-background-size: auto;
-background-size: cover;
-background-attachment: fixed;
-}
-nav {
-background-color: #7d0000; /* Changed nav background color to a nice blue */
-cursor: pointer;
-}
-#search-bar {
-width: 180px;
-transition: 2s;
-background-color: #ebebeb;
-color: #000000;
-}
-#search-bar:hover {
-width: 220px;
-cursor: pointer;
-}
-#submit {
-width: 100px;
-transition: 1.5s;
-}
-#submit:hover {
-width: 115px;
-}
-#reset {
-width: 100px;
-transition: 1.5s;
-}
-#reset:hover {
-width: 115px;
-}
-#brand {
-font-family: "Playwrite CU", cursive;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
-font-size: medium;
-}
-}
-/* Adjusted styles for laptop devices in portrait mode */
-@media (min-width: 901px) and (max-width: 1600px) and (orientation: landscape) {
-/* Adjusted styles for laptop devices in portrait mode */
-form {
-    margin-left: 510px;
-    margin-top: 70px;
-    }
-    #exampleCheck1{
-    cursor: pointer;
-    }
-    #exampleInputEmail1 {
-    width: 260px;
-    transition: width 1s;
-    background-color: #ffffff; /* Changed background color to white */
-    }
-    #exampleInputEmail1:hover {
-    width: 300px;
-    cursor: pointer;
-    }
-    #exampleInputPassword1 {
-    width: 180px;
-    transition: width 1s;
-    background-color: #ffffff; /* Changed background color to white */
-    }
-    #exampleInputPassword1:hover {
-    width: 250px;
-    cursor: pointer;
-    }
-    body {
-    background-color: #b1b1b1; /* Changed background color to a light grey */
-    background-size: auto;
-    background-size: cover;
-    background-attachment: fixed;
-    }
-    nav {
-    background-color: #7300ff; /* Changed nav background color to a nice blue */
-    cursor: pointer;
-    }
-    #search-bar {
-    width: 150px;
-    transition: 2s;
-    background-color: #ebebeb;
-    color: #000000;
-    }
-    #search-bar:hover {
-    width: 200px;
-    cursor: pointer;
-    }
-    #submit{
-    width: 80px;
-    transition: 1.5s;
-    }
-    #submit:hover{
-    width:95px;
-    }
-    #reset{
-    width: 80px;
-    transition: 1.5s;
-    }
-    #reset:hover{
-    width:95px;
-    }
-    #brand{
-    font-family: "Playwrite CU", cursive;
-    font-optical-sizing: auto;
-    font-weight:100;
-    font-style: normal;
-    font-size: medium;
-    }
 }
 /* Adjusted styles for laptop devices in landscape mode */
 </style>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
-<a class="navbar-brand" href="#" id="brand">Dareen</a>
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar-expand" style="box-shadow: 1.5px 1px 1px rgb(71, 71, 71); display: flex;">
+<a class="navbar-brand" href="#" id="brand">Gemy</a>
 <button
 class="navbar-toggler"
 type="button"
@@ -385,102 +751,110 @@ data-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent"
 aria-expanded="false"
 aria-label="Toggle navigation"
-
+id="burger_icon"
 >
-<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon" id="burger_icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >Home <span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >contact <span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">Profile</a>
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="#"
-        >About<span class="sr-only">(current)</span></a
-    >
-    </li>
-    <li class="nav-item dropdown">
-    <a
-        class="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdown"
-        role="button"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-    >
-        Dropdown
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown_menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-    </li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>Home <span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>Contact <span class="sr-only">(current)</span></a
+>
+</li>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>Services<span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#"
+>Profile<span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item dropdown">
+<a
+class="nav-link dropdown-toggle"
+href="#"
+id="navbarDropdown"
+role="button"
+data-toggle="dropdown"
+aria-haspopup="true"
+aria-expanded="false"
+>
+About
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown_menu">
+<a class="dropdown-item" href="#" target="_blank" style="padding: 10px;">GitHub</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#" target="_blank" style="padding: 10px;">Facebook</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#" target="_blank" style="padding: 10px;">Instgram</a>
+</div>
+</li>
 </ul>
-<form class="form-inline my-2 my-lg-0">
-    <input
-    id="search-bar"
-    class="form-control mr-sm-2"
-    type="search"
-    placeholder="Search"
-    aria-label="Search"
-    />
-    <button class="btn btn-primary my-2 my-sm-0" type="submit" id="search_btn" style="background-color: #0e008e;">
-    Search
-    </button>
+<form class="form-inline my-2 my-lg-0" id="form-inline-space">
+<input
+id="search-bar"
+class="form-control mr-sm-2"
+type="search"
+placeholder="Search"
+aria-label="Search"
+style="box-shadow: 3px 2px 2px rgb(71, 71, 71);"
+/>
+<button class="btn btn-primary my-2 my-sm-0" type="submit" id="search_btn">
+Search
+</button>
 </form>
 </div>
 </nav>
-<form class="form was-validated">
+<form class="form was-validated" id="form-validate">
 <div class="form-group">
 <label for="exampleInputEmail1" id="EmailAddress">Email address</label>
 <input
-    type="email"
-    class="form-control"
-    id="exampleInputEmail1"
-    aria-describedby="emailHelp"
-    placeholder="Enter email"
-    required
-    autofocus
+type="email"
+class="form-control"
+id="exampleInputEmail1"
+aria-describedby="emailHelp"
+placeholder="Enter email"
+required
+autofocus
 >
 <div class="valid-feedback">Valid</div>
-<div class="invalid-feedback">Please fill in this field</div>
+<div class="invalid-feedback" id="small-label-email">Please fill in this field</div>
 </div><br>
 <div class="form-group">
 <label for="exampleInputPassword1" id="Password">Password</label>
 <input
-    type="password"
-    class="form-control"
-    id="exampleInputPassword1"
-    placeholder="Password"
-    required
-    minlength="8"
-    maxlength="20"
+type="password"
+class="form-control"
+id="exampleInputPassword1"
+placeholder="Password"
+required
+minlength="8"
+maxlength="20"
 />
 <div class="valid-feedback">Valid</div>
-<div class="invalid-feedback">Password must be at least 8 characters.</div>
+<div class="invalid-feedback" id="small-label-password">Password must be at least 8 characters.</div>
 </div>
 <div class="form-check">
 <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-<label class="form-check-label" for="exampleCheck1" style="color: #2f2f2f;">Remember me</label>
+<label class="form-check-label" for="exampleCheck1" id="checkbox">Remember me</label>
 </div>
 <div class="mb-3"></div>
 <!-- Added space between check me out and submit button -->
 <button type="submit" class="btn btn-success" id="submit">Log in</button>
 <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+<a href="#" target="_blank"><i class="fa-brands fa-facebook" id="facebook_icon" style="color: #005eff;"></i></a>
+<a href="#" target="_blank"><i class="fa-brands fa-github" id="GitHub_icon" style="color:rgb(49, 24, 0);"></i></a>
+<a href="#" target="_blank"><i class="fa-brands fa-instagram" id="Instgram_icon" style="color: #000000;"></i></a>
 </form>
 <script src="JavaScript/Login_page.js"></script>
 <script class="alert">
