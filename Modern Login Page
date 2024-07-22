@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -1344,10 +1343,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background: url(https://wallpaperswide.com/download/dark_green_forest-wallpaper-2560x1440.jpg) no-repeat;
+background: url(https://wallpaperswide.com/download/snowy_country_road-wallpaper-2560x1440.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 position: relative;
+min-height: 500px;
 }
 nav {
 position: absolute;
@@ -1446,19 +1446,22 @@ object-fit: cover;
 }
 .wrapper {
 width: 60%;
-height: 489px;
+height: 428px;
 color: #fff;
 background-color: transparent;
 border: 2px solid rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
-padding: 30px 40px;
+padding: 10px 40px 0px 40px;
+position: relative;
+top: 36px;
 }
 .wrapper h1 {
-font-size: 2.5rem;
+font-size: 29px;
 justify-content: center;
 text-align: center;
+margin: 0 10px;
 }
 .wrapper .inputbox {
 width: 100%;
@@ -1467,7 +1470,7 @@ margin: 30px 0;
 position: relative;
 }
 .inputbox input {
-width: 98%;
+width: 70%;
 height: 100%;
 outline: none;
 background: transparent;
@@ -1475,7 +1478,10 @@ border: 2px solid rgba(255, 255, 255, 0.2);
 border-radius: 40px;
 font-size: 16px;
 color: #fff;
+left: 13%;
+position: relative;
 padding: 20px 45px 20px 20px;
+
 }
 .wrapper .remember-me {
 display: flex;
@@ -1489,6 +1495,7 @@ color: #fff;
 position: relative;
 top: 19px;
 font-size: 12px;
+right: 61px;
 }
 .inputbox input::placeholder {
 color: #ffffff;
@@ -1525,7 +1532,12 @@ font-size: 600;
 p {
 margin-top: 20px;
 position: relative;
-top: 11px;
+top: 4px;
+}
+#Box-user{
+position: relative;
+right: -17px;
+top: 10px;
 }
 .register-link p a:hover {
 text-decoration: underline;
@@ -1545,6 +1557,7 @@ cursor: pointer;
 position: relative;
 top: 19px;
 font-size: 13px;
+left: 58px;
 }
 .wrap-check-63 label span {
 display: inline-block;
@@ -1638,6 +1651,19 @@ transition: width 150ms ease 100ms;
 border: 0 solid;
 box-sizing: border-box;
 }
+.btn-77:disabled {
+cursor: default;
+}
+.btn-77:-moz-focusring {
+outline: auto;
+}
+.btn-77 svg {
+display: block;
+/* vertical-align: middle; */
+}
+.btn-77 [hidden] {
+display: none;
+}
 .btn-77 {
 animation: pulse 1s infinite;
 /* border: 1px solid; */
@@ -1657,19 +1683,6 @@ background: white;
 color: black;
 top: 10px;
 }
-.btn-77:disabled {
-cursor: default;
-}
-.btn-77:-moz-focusring {
-outline: auto;
-}
-.btn-77 svg {
-display: block;
-/* vertical-align: middle; */
-}
-.btn-77 [hidden] {
-display: none;
-}
 .btn-77 {
 -webkit-animation: pulse 1s infinite;
 animation: pulse 1s infinite;
@@ -1685,7 +1698,10 @@ overflow: hidden;
 padding: 15px 20px;
 position: relative;
 text-transform: uppercase;
-width: 100%;
+width: 70%;
+position: relative;
+left: 58px;
+top: 10px;
 }
 @-webkit-keyframes pulse {
 0% {
@@ -1716,7 +1732,7 @@ input:invalid +.invalid-feedback {
 display: block;
 display: block;
 position: absolute;
-left: 16px;
+left: 70px;
 }
 input:valid +.invalid-feedback {
 display: none;
@@ -2203,12 +2219,12 @@ animation: pulse-invalid 2s infinite;
 <div class="inputbox">
 <input type="text" id="username" placeholder="username" required minlength="4" title="Username must be at least 4 characters long" />
 <div class="invalid-feedback" id="username-error">Please fill in this field</div>
-<i class="bx bxs-user"></i>
+<i class="bx bxs-user" id="Box-user"></i>
 </div>
 <div class="inputbox">
 <input type="password" id="password" placeholder="Password" required minlength="8" />
 <div class="invalid-feedback" id="password-error">Password must be at least 8 characters</div>
-<i class="bx bxs-lock-alt"></i>
+<i class="bx bxs-lock-alt" id="Box-user"></i>
 </div>
 <div class="remember-me">
 <div class="wrap-check-63">
@@ -2226,7 +2242,7 @@ justify-content:space-evenly;
 font-size: 16px;
 font-size: 31px;
 position: relative;
-top: 26px;
+top: 22px;
 "
 >
 <a href="https://web.facebook.com/gamaleldin.sherief/" style="color: white;" target="_blank"
