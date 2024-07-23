@@ -48,6 +48,17 @@ font-optical-sizing: auto;
 font-weight: 100;
 font-style: normal;
 }
+.brand:hover{
+    text-decoration: none;
+    color:#fff ;
+}
+.brand{
+    text-decoration: none;
+    color:#fff ;
+}
+a:hover{
+    color: #fff;
+}
 @media (min-width: 901px) and (max-width: 2200px) and (orientation: landscape) {
 body {
 display: flex;
@@ -539,7 +550,7 @@ display: flex;
 position: relative;
 top: 10px;
 font-size: 13px;
-right: 24px;
+right: 13px;
 }
 .list li {
 margin-left: 20px;
@@ -1020,15 +1031,17 @@ min-height: 200vh;
 object-fit: cover;
 }
 .wrapper {
-width: 60%;
-height: 489px;
+width: 54%;
+height: 428px;
 color: #fff;
 background-color: transparent;
 border: 2px solid rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
-padding: 30px 40px;
+padding: 10px 30px 0px 30px;
+position: relative;
+top: 36px;
 }
 .wrapper h1 {
 font-size: 2.5rem;
@@ -1445,7 +1458,7 @@ min-height: 200vh;
 object-fit: cover;
 }
 .wrapper {
-width: 60%;
+width: 52%;
 height: 428px;
 color: #fff;
 background-color: transparent;
@@ -1453,12 +1466,12 @@ border: 2px solid rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
-padding: 10px 40px 0px 40px;
+padding: 10px 30px 0px 30px;
 position: relative;
 top: 36px;
 }
 .wrapper h1 {
-font-size: 29px;
+font-size: 29px;    
 justify-content: center;
 text-align: center;
 margin: 0 10px;
@@ -1493,7 +1506,7 @@ font-size: 14.5px;
 margin-right: 4px;
 color: #fff;
 position: relative;
-top: 19px;
+top: 20px;
 font-size: 12px;
 right: 61px;
 }
@@ -1536,7 +1549,7 @@ top: 4px;
 }
 #Box-user{
 position: relative;
-right: -17px;
+right: -12px;
 top: 10px;
 }
 .register-link p a:hover {
@@ -1555,7 +1568,7 @@ display: inline-block;
 color: #ffffff;
 cursor: pointer;
 position: relative;
-top: 19px;
+top: 18px;
 font-size: 13px;
 left: 58px;
 }
