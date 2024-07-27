@@ -509,13 +509,45 @@ font-size: 14px;
 .remember-me a{
 font-size: 14px;
 }
-}/* this is for tablet devices */
+}
+/* this is for tablet devices */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
 body{
     background-image: url(Photos/bmw-m4-competition-5120x2880-17098.jpg);
 }
 }/* this for tablet in landscape mode */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+body{
+background-image: url(https://wallpaperswide.com/download/the_starry_night-wallpaper-2560x1600.jpg);
+background-size: cover;
+background-position: center;
+}
+.wrapper{
+height: 455px;
+position: relative;
+top: 12px;
+margin-top: 41px;
+}
+.wrapper h1{
+font-size: 30px;
+letter-spacing: 3px;
+}
+.inputbox input{
+width: 98%;
+height: 89%;
+}
+#social-icons{
+font-size: 35px !important;
+}
+p{
+position:relative !important;
+top:0 !important;
+}
+nav{
+margin-bottom: 10px;
+height: 56px;
+position: absolute;
+}
 }/* for ipad pro */
 @media (min-width: 901px) and (max-width: 1350px) and (orientation: portrait){
 .wrapper{
