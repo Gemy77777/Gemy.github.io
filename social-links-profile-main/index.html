@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="menu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,8 +20,9 @@
         font-size: 11px;
         text-align: center;
         position: relative;
-        left: 3px;
-        top: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -39,7 +40,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        left: 110px;
+        left: 124px;
         margin-bottom: 10px;
       }
       .wrapper {
@@ -49,15 +50,16 @@
         border-radius: 20px;
         position: absolute;
         left: 36%;
-        top: 8%;
+        top: 14%;
         padding: 20px;
         text-align: center;
+        transform: scale(.9);
       }
       h3 {
         font-size: 26px;
         color: aliceblue;
       }
-      h5 {
+      h4 {
         font-size: 12px;
         color: hsl(75, 94%, 57%);
         margin-bottom: 12px;
@@ -83,6 +85,8 @@
         color: white;
         margin: 14px auto;
         cursor: pointer;
+        font-size: 18px;
+        letter-spacing: 1px;
       }
       .field-button:hover {
         background-color: hsl(75, 94%, 57%);
@@ -105,22 +109,16 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-        <div class="image"></div>
-        <h3>Jessica Randall</h3>
-        <h5>London,United kingdom</h5>
-        <h6><q>Front-end Developer and avid reader. </q></h6>
-        <div class="field-button">GitHub</div>
-        <div class="field-button">Front-end mentor</div>
-        <div class="field-button">Linkedin</div>
-        <div class="field-button">Twitter</div>
-        <div class="field-button">Instgram</div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">GamalELdin</a>.
+    <div class="wrapper" role="wrapper">
+        <div class="image" role="img"></div>
+        <h3 role="heading">Jessica Randall</h3>
+        <h4 role="text">London,United kingdom</h4>
+        <h6 role="text"><q>Front-end Developer and avid reader. </q></h6>
+        <div class="field-button" role="button">GitHub</div>
+        <div class="field-button" role="button">Front-end mentor</div>
+        <div class="field-button" role="button">Linkedin</div>
+        <div class="field-button" role="button">Twitter</div>
+        <div class="field-button" role="button">Instgram</div>
     </div>
   </body>
 </html>
