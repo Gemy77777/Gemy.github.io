@@ -1,7 +1,7 @@
-fName = input("Enter your first name: ")
-mName = input("Enter your middle name: ")
-lName = input("Enter your last name: ")
-age = int(input("Enter your age: "))
+fName = input("what's your name ")
+mName = input("what's your middle name ")
+lName = input("what's your last name ")
+age = int(input("what's your age "))
 
 fName = fName.strip().title()
 mName = mName.strip().title()
