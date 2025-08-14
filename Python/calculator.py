@@ -1,8 +1,8 @@
 while True:
     try:   
         import math
-        continue_or_not = input("press Enter to continue or end to exit: ")
-        if continue_or_not == "end":
+        continue_or_not = input("press Enter to continue or e to exit: ")
+        if continue_or_not == "e":
             print('ok.. bye bye<3')
             break
         else:
@@ -25,18 +25,15 @@ while True:
             input("this function convert degree to radian\n press any key to continue")
         else:
             pass
-
         numbers = [float(num) for num in input("Enter numbers separated by space: ").split()]
         try:
             pass
         except ValueError:
             print("Please enter valid numbers.")
             exit()
-
         if operator == "+":
             result = sum(numbers)
-            print(result)
-        
+            print(result)        
         elif operator == "-":
             result = numbers[0]
             for num in numbers[1:]:
@@ -66,7 +63,6 @@ while True:
         elif operator == "min":#Minimum number
             result = min(numbers)
             print(result)
-
         elif operator == "%":
             if len(numbers) != 2:
                 print("percentage requires exactly two numbers")
@@ -150,8 +146,7 @@ while True:
             result = numbers[0]
             for num in numbers[0:]:
                 result = sorted(numbers)
-            print(result)
-                                    
+            print(result)                              
         #Angular Conversion
         elif operator == "deg to rad":
             result = math.radians(numbers[0])
@@ -159,6 +154,12 @@ while True:
         elif operator == "rad to deg":
             result = math.degrees(numbers[0])
             print(result)
+        elif operator == 'is even':
+            for num in numbers:
+                if num % 2 == 0:
+                    print(f"{num} is even.")
+                else:
+                    print(f"{num} is odd.")
         else:
             print("invalid operator.. please try again")      
             
