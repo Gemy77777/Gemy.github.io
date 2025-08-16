@@ -14,15 +14,15 @@ while True:
         elif operator == "min":
             input ("this function choosing the smallest num\n press any key to continue ")
         elif operator == "max":
-            input("this function choosing the smallest num\n press any key to continue")
+            input("this function choosing the smallest num\n press any key to continue ")
         elif operator == "app":
-            input("this function makes approximation\n press any key to continue")
+            input("this function makes approximation\n press any key to continue ")
         elif operator == "sqrt":
-            input("this function makes square root\n press any key to continue")
+            input("this function makes square root\n press any key to continue ")
         elif operator == "rad to deg":
-            input("this function convert radian to degree\n press any key to continue")
+            input("this function convert radian to degree\n press any key to continue ")
         elif operator == "deg to rad":
-            input("this function convert degree to radian\n press any key to continue")
+            input("this function convert degree to radian\n press any key to continue ")
         else:
             pass
         numbers = [float(num) for num in input("Enter numbers separated by space: ").split()]
