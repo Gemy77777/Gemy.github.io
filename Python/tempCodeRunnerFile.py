@@ -1,0 +1,1 @@
+print(os.listdir())  # This will display the files and directories in the current path

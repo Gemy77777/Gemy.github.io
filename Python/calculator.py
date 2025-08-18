@@ -1,169 +1,114 @@
+import math
 while True:
-    try:   
-        import math
-        continue_or_not = input("press Enter to continue or e to exit: ")
+    try:
+        continue_or_not = input("Press Enter to continue or 'e' to exit: ")
         if continue_or_not == "e":
-            print('ok.. bye bye<3')
+            print('Ok.. Bye Bye')
             break
+        # Get the first set of numbers
+        numbers1 = [float(num) for num in input("Enter the first number(s), separated by space: ").split()]
+        operator = input("Enter operator: ").strip().lower()
+        # For operators that need a second set of numbers
+        if operator in ["+", "-", "*", "/", "^", "%", "p%", "divmod"]:
+            numbers2 = [float(num) for num in input("Enter the second number(s), separated by space: ").split()]
         else:
-            pass
-        operator = input("Enter operator: ")
-        if operator == "end":
-            print('ok.. bye <3')
-            break
-        elif operator == "min":
-            input ("this function choosing the smallest num\n press any key to continue ")
-        elif operator == "max":
-            input("this function choosing the smallest num\n press any key to continue ")
-        elif operator == "app":
-            input("this function makes approximation\n press any key to continue ")
-        elif operator == "sqrt":
-            input("this function makes square root\n press any key to continue ")
-        elif operator == "rad to deg":
-            input("this function convert radian to degree\n press any key to continue ")
-        elif operator == "deg to rad":
-            input("this function convert degree to radian\n press any key to continue ")
-        else:
-            pass
-        numbers = [float(num) for num in input("Enter numbers separated by space: ").split()]
-        try:
-            pass
-        except ValueError:
-            print("Please enter valid numbers.")
-            exit()
+            numbers2 = []
+        # Perform calculation
         if operator == "+":
-            result = sum(numbers)
-            print(result)        
+            result = sum(numbers1 + numbers2)
+            print(result)
         elif operator == "-":
-            result = numbers[0]
-            for num in numbers[1:]:
+            result = numbers1[0]
+            for num in numbers1[1:] + numbers2:
                 result -= num
-            print(result)       
-        elif operator == "*": 
+            print(result)
+        elif operator == "*":
             result = 1
-            for num in numbers:
+            for num in numbers1 + numbers2:
                 result *= num
             print(result)
         elif operator == "/":
-            result = numbers[0]
-            for num in numbers[1:]:
+            result = numbers1[0]
+            for num in numbers1[1:] + numbers2:
                 result /= num
             print(result)
         elif operator == "^":
-            result = numbers[0]
-            for num in numbers[1:]:
-                result **= num  
-            print(result)
-        elif operator == "app.": # approximation
-            result = round(sum(numbers) / len(numbers))
-            print(result)
-        elif operator == "max":# Maximum number
-            result = max(numbers)
-            print(result)
-        elif operator == "min":#Minimum number
-            result = min(numbers)
+            result = numbers1[0]
+            for num in numbers1[1:] + numbers2:
+                result **= num
             print(result)
         elif operator == "%":
-            if len(numbers) != 2:
-                print("percentage requires exactly two numbers")
+            if len(numbers1) == 1 and len(numbers2) == 1:
+                result = (numbers1[0] / numbers2[0]) * 100
+                print(f"{result}%")
             else:
-                result = (numbers[0] / numbers[1]) * 100
-                print(f"{result}%") 
-                
-        elif operator == "p%": 
-            if len(numbers) != 2:
-                print("Percentage of a number operation requires exactly two numbers.")
-            else:
-                result = numbers[0] * (numbers[1] / 100)
+                print("Percentage requires one number in each set.")
+        elif operator == "p%":
+            if len(numbers1) == 1 and len(numbers2) == 1:
+                result = numbers1[0] * (numbers2[0] / 100)
                 print(result)
-        elif operator == "sqrt": # squaring 
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = math.sqrt(num)     
+            else:
+                print("Percentage of a number requires one number in each set.")
+        elif operator == "min":
+            result = min(numbers1)
+            print(result)
+        elif operator == "max":
+            result = max(numbers1)
+            print(result)
+        elif operator == "sqrt":
+            result = [math.sqrt(num) for num in numbers1]
+            print(result)
+        elif operator == "app.":
+            result = round(sum(numbers1) / len(numbers1))
             print(result)
         elif operator == "sin":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [round(math.sin(math.radians(num)),1)]
+            result = [round(math.sin(math.radians(num)), 2) for num in numbers1]
             print(result)
         elif operator == "cos":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [round(math.cos(math.radians(num)),1)]
+            result = [round(math.cos(math.radians(num)), 2) for num in numbers1]
             print(result)
         elif operator == "tan":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [round(math.tan(math.radians(num)),1)]
+            result = [round(math.tan(math.radians(num)), 2) for num in numbers1]
             print(result)
-        elif operator == "sec":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [1/round(math.sin(math.radians(num)),1)]
-            print(result)    
-        elif operator == "csc":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [1/round(math.cos(math.radians(num)),1)]
-            print(result)
-        elif operator == "cot":
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = [1/round(math.tan(math.radians(num)),1)]
-            print(result)
-        elif operator == "!":
-            if len(numbers) != 1 or numbers[0] < 0:
-                print("Factorial function requires a non-negative integer.")
-            else:
-                result = math.factorial(int(numbers[0]))
-                print(result)
-        elif operator == "log_10":
-            numbers = [int(num) for num in numbers]
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = math.log10(numbers[0])
-            print(result)
-        elif operator == "log":
-            numbers = [float(num) for num in numbers]
-            if len(numbers) != 1 or numbers[0] <= 0:
-                print("Logarithm function requires exactly one +ve number.")
-            else:
-                result = math.log(numbers[0])
-                print(result)
-        elif operator == 'abs':
-            result = numbers[0]
-            for num in numbers:
-                result = abs(numbers[0])
-            print('the absolute number=', result)
-        elif operator == 'divmod':
-            numbers = [int(num) for num in numbers]
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = divmod(numbers[0], numbers[1])
-            print(result)
-        elif operator == 'sort':
-            numbers = [int(num) for num in numbers]
-            result = numbers[0]
-            for num in numbers[0:]:
-                result = sorted(numbers)
-            print(result)                              
-        #Angular Conversion
         elif operator == "deg to rad":
-            result = math.radians(numbers[0])
+            result = [math.radians(num) for num in numbers1]
             print(result)
         elif operator == "rad to deg":
-            result = math.degrees(numbers[0])
+            result = [math.degrees(num) for num in numbers1]
             print(result)
-        elif operator == 'is even':
-            for num in numbers:
+        elif operator == "!":
+            if len(numbers1) == 1 and numbers1[0] >= 0 and numbers1[0].is_integer():
+                result = math.factorial(int(numbers1[0]))
+                print(result)
+            else:
+                print("Factorial requires a single non-negative integer.")
+        elif operator == "log_10":
+            result = [math.log10(num) for num in numbers1 if num > 0]
+            print(result)
+        elif operator == "log":
+            result = [math.log(num) for num in numbers1 if num > 0]
+            print(result)
+        elif operator == "abs":
+            result = [abs(num) for num in numbers1]
+            print(result)
+        elif operator == "divmod":
+            if len(numbers1) == 1 and len(numbers2) == 1:
+                result = divmod(int(numbers1[0]), int(numbers2[0]))
+                print(result)
+            else:
+                print("Divmod requires one number in each set.")
+        elif operator == "sort":
+            result = sorted(numbers1)
+            print(result)
+        elif operator == "is even":
+            for num in numbers1:
                 if num % 2 == 0:
                     print(f"{num} is even.")
                 else:
                     print(f"{num} is odd.")
         else:
-            print("invalid operator.. please try again")      
-            
+            print("Invalid operator. Please try again.")
     except ValueError:
         print('Invalid input... Please try again')
-    except Exception:
-        print('Unknown Error.. Please try again')
+    except Exception as e:
+        print(f'Unknown Error: {e} ... Please try again')
