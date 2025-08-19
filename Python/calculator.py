@@ -5,6 +5,36 @@ while True:
         if continue_or_not == "e":
             print('Ok.. Bye Bye')
             break
+        # Area calculation option
+        area_choice = input("Do you want to calculate the area of a shape? (y/n): ").strip().lower()
+        if area_choice == "y":
+            print("Available shapes: circle, square, rectangle, triangle, parallelogram, trapezoid")
+            shape = input("Enter the shape: ").strip().lower()
+            if shape == "circle" or shape == "c":
+                r = float(input("Enter the radius: "))
+                area = math.pi * r * r
+                print(f"Area of circle: {area:.2f}")
+            elif shape == "square" or shape == "s":
+                a = float(input("Enter the side length: "))
+                area = a * a
+                print(f"Area of square: {area:.2f}")
+            elif shape == "rectangle" or shape == "r":
+                l = float(input("Enter the length: "))
+                area = l * l
+                print(f"Area of rectangle: {area:.2f}")
+            elif shape == "triangle" or shape == "t":
+                b = float(input("Enter the base: "))
+                h = float(input("Enter the height: "))
+                area = 0.5 * b * h
+                print(f"Area of triangle: {area:.2f}")
+            elif shape == "parallelogram" or shape == "p":
+                b = float(input("Enter the base: "))
+                h = float(input("Enter the height: "))
+                area = b * h
+                print(f"Area of parallelogram: {area:.2f}")
+            else:
+                print("Unknown shape.")
+            continue  # Skip the rest and restart loop
         # Get the first set of numbers
         numbers1 = [float(num) for num in input("Enter the first number(s), separated by space: ").split()]
         operator = input("Enter operator: ").strip().lower()
