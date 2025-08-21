@@ -1,1 +1,2 @@
-﻿Console.WriteLine("Gemy");
+﻿string name = "Gemy";
+Console.WriteLine(name);
