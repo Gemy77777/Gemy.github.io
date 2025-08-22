@@ -57,8 +57,9 @@
 ## 📫 Connect With Me  
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gemy77777)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-username)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)  
+[![Email](https://img.shields.io/badge/Email-gemysherief%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gemysherief@gmail.com)  
+[![Phone](https://img.shields.io/badge/Phone-01061592794-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+201061592794)  
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/share/17J9VmkRCN/)  
 
----
 ✨ *“Code is like humor. When you have to explain it, it’s bad.”* ✨
