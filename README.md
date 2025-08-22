@@ -32,8 +32,11 @@
 
 <div align="center">
 
-![Gamaleldin's GitHub stats](https://github-readme-stats.vercel.app/api?username=Gemy&show_icons=true&theme=tokyonight)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Gemy&layout=compact&theme=tokyonight)
+## 📊 GitHub Stats
+![Gamaleldin's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=GamaleldinSherief&show_icons=true&theme=tokyonight)  
+
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=GamaleldinSherief&layout=compact&theme=tokyonight)
+
 
 </div>
 
