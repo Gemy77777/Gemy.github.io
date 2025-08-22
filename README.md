@@ -1,15 +1,15 @@
 # 💻 Gamaleldin Sherief  
 
-🎓 Computer Science Student | 🌐 Aspiring Full-Stack Developer | 💡 Always learning  
+🎓 Computer Science Student | 🌐 Aspiring Full-Stack Developer | 💡 Lifelong Learner  
 
 ---
 
 ## 🚀 About Me  
-- 👨‍🎓 Student of **Computer Science**  
-- 🐍 Experience with **Python**  
-- 🎨 Comfortable with **HTML, CSS, Bootstrap** for front-end  
-- ⚙️ Currently learning **C#** and exploring **ASP.NET**  
-- 📚 Passionate about **Web Development & Problem Solving**  
+- 👨‍🎓 Computer Science student passionate about **Web Development & Software Engineering**  
+- 🐍 Experienced in **Python**  
+- 🎨 Skilled with **HTML, CSS, Bootstrap** for front-end  
+- ⚙️ Currently learning **C# & ASP.NET** for back-end development  
+- 🌟 Looking for **internship opportunities** to apply and grow my skills  
 
 ---
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats  
 
 <p align="center">
   <img
@@ -44,21 +44,27 @@
   />
 </p>
 
+---
+
+## 💼 Featured Projects  
+- 🔗 [**Portfolio Website**](https://github.com/Gemy77777/Gemy.github.io) — Personal website built with HTML, CSS, and Bootstrap  
+- 🔗 [**Python Projects**](https://github.com/Gemy77777?tab=repositories&q=python) — Scripts & mini-projects showcasing Python skills  
+- 🔗 *(Add more here when you finish new projects!)*  
 
 ---
 
 ## 🌟 Goals for 2025  
 - 🚀 Build real-world **full-stack projects** using C# & ASP.NET  
 - 🧑‍💻 Contribute to **open source**  
-- 📈 Grow as a **software engineer**  
+- 📈 Land a **software engineering internship**  
 
 ---
 
 ## 📫 Connect With Me  
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gemy)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gemy77777)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-username)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)  
 
 ---
 ✨ *“Code is like humor. When you have to explain it, it’s bad.”* ✨
