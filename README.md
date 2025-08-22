@@ -28,17 +28,13 @@
 
 ---
 
-## 📊 GitHub Stats  
-
-<div align="center">
-
 ## 📊 GitHub Stats
-![Gamaleldin's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=GamaleldinSherief&show_icons=true&theme=tokyonight)  
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=GamaleldinSherief&layout=compact&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=GamaleldinSherief&show_icons=true&theme=tokyonight&hide_border=true" alt="Gamaleldin's GitHub stats" height="180" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=GamaleldinSherief&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180" />
+</p>
 
-
-</div>
 
 ---
 
