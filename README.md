@@ -62,4 +62,3 @@
 [![Phone](https://img.shields.io/badge/Phone-01061592794-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+201061592794)  
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/share/17J9VmkRCN/)  
 
-✨ *“Code is like humor. When you have to explain it, it’s bad.”* ✨
