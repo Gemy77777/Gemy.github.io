@@ -7,8 +7,8 @@
 ## 🚀 About Me  
 - 👨‍🎓 Computer Science student passionate about **Web Development & Software Engineering**  
 - 🐍 Experienced in **Python**  
-- 🎨 Skilled with **HTML, CSS, Bootstrap** for front-end  
-- ⚙️ Currently learning **C# & ASP.NET** for back-end development  
+- 🎨 Learning **HTML, CSS, Bootstrap, React** for front-end  
+- ⚙️ Learning **C# & ASP.NET** for back-end development  
 - 🌟 Looking for **internship opportunities** to apply and grow my skills  
 
 ---
