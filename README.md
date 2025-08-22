@@ -46,12 +46,6 @@
 
 ---
 
-## 💼 Featured Projects  
-- 🔗 [**Portfolio Website**](https://github.com/Gemy77777/Gemy.github.io) — Personal website built with HTML, CSS, and Bootstrap  
-- 🔗 [**Python Projects**](https://github.com/Gemy77777?tab=repositories&q=python) — Scripts & mini-projects showcasing Python skills  
-- 🔗 *(Add more here when you finish new projects!)*  
-
----
 
 ## 🌟 Goals for 2025  
 - 🚀 Build real-world **full-stack projects** using C# & ASP.NET  
