@@ -32,16 +32,24 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=Gemy77777&show_icons=true&theme=tokyonight&hide_border=true"
+    src="https://github-readme-stats.vercel.app/api?username=Gemy77777&show_icons=true&include_all_commits=true&count_private=true&show=stars&theme=tokyonight&hide_border=true&cache_seconds=10"
     alt="Gemy77777's GitHub stats"
     height="180"
   />
   &nbsp;
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gemy77777&layout=compact&theme=tokyonight&hide_border=true"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gemy77777&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=10"
     alt="Top Languages"
     height="180"
   />
+</p>
+
+<p align="center">
+  <!-- GitHub Stars Badge -->
+  <img src="https://img.shields.io/github/stars/Gemy77777?affiliations=OWNER&style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars"/>
+  
+  <!-- GitHub Followers Badge -->
+  <img src="https://img.shields.io/github/followers/Gemy77777?style=for-the-badge&logo=github&color=blue" alt="GitHub Followers"/>
 </p>
 
 ---
