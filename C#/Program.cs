@@ -1,2 +1,3 @@
-﻿string name = "Gemy";
-Console.WriteLine(name);
+﻿int num = 10;
+Console.WriteLine(num);
+    

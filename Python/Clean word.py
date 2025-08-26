@@ -1,5 +1,5 @@
-word = input()
-def clean_word(word):
+word = input('Enter a word: ')
+def clean_word(word) -> str:
     if len(word) == 1:
         return word
     if word[0] == word[1]:
