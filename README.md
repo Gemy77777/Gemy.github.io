@@ -8,7 +8,7 @@
 - 👨‍🎓 Computer Science student passionate about **Web Development & Software Engineering**  
 - 🐍 Experienced in **Python**  
 - 🎨 Learning **HTML, CSS, Bootstrap, React** for front-end  
-- ⚙️ Learning **JAVASCRIPT & NODE>JS** for back-end development  
+- ⚙️ Learning **JAVASCRIPT & NODE.JS** for back-end development  
 - 🌟 Looking for **internship opportunities** to apply and grow my skills  
 
 ---
