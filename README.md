@@ -8,7 +8,7 @@
 - 👨‍🎓 Computer Science student passionate about **Web Development & Software Engineering**  
 - 🐍 Experienced in **Python**  
 - 🎨 Learning **HTML, CSS, Bootstrap, React** for front-end  
-- ⚙️ Learning **C# & ASP.NET** for back-end development  
+- ⚙️ Learning **JAVASCRIPT & NODE>JS** for back-end development  
 - 🌟 Looking for **internship opportunities** to apply and grow my skills  
 
 ---
@@ -56,7 +56,7 @@
 
 
 ## 🌟 Goals for 2025  
-- 🚀 Build real-world **full-stack projects** using C# & ASP.NET  
+- 🚀 Build real-world **full-stack projects** using JS And Node.js  
 - 🧑‍💻 Contribute to **open source**  
 - 📈 Land a **software engineering internship**  
 
