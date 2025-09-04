@@ -1,5 +1,8 @@
 # 💻 Gamaleldin Sherief  
 
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Hi+there!+👋;I'm+Gamaleldin+Sherief;Ethical+Hacker+%7C+Penetration+Tester;Always+Learning+Cybersecurity)
+
+
 🎓 Computer Science Student | 🛡️ Aspiring Ethical Hacker / Penetration Tester | 💡 Lifelong Learner  
 
 ---
@@ -68,6 +71,13 @@
 - 🎯 Land a **penetration testing internship**  
 
 ---
+
+## 🐍 GitHub Contribution Snake  
+
+<p align="center">
+  <img src="https://github.com/Gemy77777/Gemy77777/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
+</p>
+
 
 ## 📫 Connect With Me  
 
