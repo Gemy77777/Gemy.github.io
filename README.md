@@ -1,15 +1,15 @@
 # 💻 Gamaleldin Sherief  
 
-🎓 Computer Science Student | 🌐 Aspiring Full-Stack Developer | 💡 Lifelong Learner  
+🎓 Computer Science Student | 🛡️ Aspiring Ethical Hacker / Penetration Tester | 💡 Lifelong Learner  
 
 ---
 
 ## 🚀 About Me  
-- 👨‍🎓 Computer Science student passionate about **Web Development & Software Engineering**  
+- 👨‍🎓 Computer Science student passionate about **Cybersecurity & Ethical Hacking**  
 - 🐍 Experienced in **Python**  
-- 🎨 Learning **HTML, CSS, Bootstrap, React** for front-end  
-- ⚙️ Learning **JAVASCRIPT & NODE.JS** for back-end development  
-- 🌟 Looking for **internship opportunities** to apply and grow my skills  
+- 🌐 Learning **Networking, Linux, Web Security Fundamentals**  
+- 🔒 Exploring **Vulnerability Assessment, Penetration Testing & Exploit Development**  
+- 🌟 Looking for **internship opportunities** to apply and grow my skills in cybersecurity  
 
 ---
 
@@ -18,12 +18,11 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Networking](https://img.shields.io/badge/Networking-0078D7?style=for-the-badge&logo=cisco&logoColor=white)
+![BurpSuite](https://img.shields.io/badge/Burp%20Suite-FF6F00?style=for-the-badge&logo=burpsuite&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-2E8B57?style=for-the-badge&logo=metasploit&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
@@ -55,11 +54,10 @@
 
 ---
 
-
 ## 🌟 Goals for 2025  
-- 🚀 Build real-world **full-stack projects** using JS And Node.js  
-- 🧑‍💻 Contribute to **open source**  
-- 📈 Land a **software engineering internship**  
+- 🚀 Build real-world **penetration testing projects & labs**  
+- 🧑‍💻 Contribute to **open source security tools**  
+- 📈 Land a **cybersecurity / penetration testing internship**  
 
 ---
 
@@ -70,5 +68,3 @@
 [![Email](https://img.shields.io/badge/Email-gemysherief%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gemysherief@gmail.com)  
 [![Phone](https://img.shields.io/badge/Phone-01061592794-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+201061592794)  
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/share/17J9VmkRCN/)  
-
-
