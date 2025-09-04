@@ -72,11 +72,11 @@
 
 ---
 
-## 🐍 GitHub Contribution Snake  
-
-<p align="center">
-  <img src="https://github.com/Gemy77777/Gemy77777/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
-</p>
+### 🐍 GitHub Contribution Snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gemy77777/Gemy77777/output/github-snake-dark.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Gemy77777/Gemy77777/output/github-snake.svg" />
+</picture>
 
 
 
