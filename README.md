@@ -14,7 +14,7 @@
 
 ## 🚀 About Me  
 - 👨‍🎓 Computer Science student passionate about **Cybersecurity & Ethical Hacking**  
-- 🐍 Skilled in **Python** for automation & scripting  
+- 🐍 Have a good background in **Python**
 - 🌐 Learning **Networking, Linux, Web Security**  
 - 🔒 Exploring **Vulnerability Assessment, Exploit Development & Pentesting**  
 - 🧑‍💻 Building labs for **red teaming & exploit testing**  
@@ -74,7 +74,7 @@
 ---
 
 ## 🌟 Goals for 2025  
-- ✅ Finish **CompTIA Security+** by mid-2025  
+- ✅ Finish **CompTIA Security+** by mid-2025 and other certeficates  
 - ✅ Reach **Top 1% on TryHackMe**  
 - ✅ Publish **3+ security writeups** on Medium/GitHub  
 - ✅ Build real-world **pentesting labs & automation tools**  
