@@ -1,4 +1,6 @@
 import math
+import numpy as np
+
 class ShapeCalculator:
     """Handles area calculations for various shapes."""
     @staticmethod
@@ -37,47 +39,57 @@ class ShapeCalculator:
             print(f"Area of trapezoid: {area:.2f}")
         else:
             print("Unknown shape.")
+
 class Calculator:
-    """Handles general mathematical operations."""
+    """Handles general mathematical operations using numpy arrays for performance."""
+
     def __init__(self):
-        self.numbers1 = []
-        self.numbers2 = []
+        self.numbers1 = np.array([])
+        self.numbers2 = np.array([])
         self.operator = ""
-    def get_numbers(self, operator):
-        """Prompts user for numbers and returns them as a list of floats."""
-        return [float(num) for num in input(operator).split()]
+
+    def get_numbers(self, prompt):
+        """Prompts user for numbers and returns them as a numpy array of floats."""
+        nums = input(prompt)
+        if nums.strip() == "":
+            return np.array([])
+        return np.array([float(num) for num in nums.split()])
+
     def get_operator(self):
         """Prompts user for the operator."""
         return input("Enter operator: ").strip().lower()
+
     def calculate(self):
-        """Performs the calculation based on user input."""
+        """Performs the calculation based on user input using numpy arrays."""
         self.numbers1 = self.get_numbers("Enter the first number(s), separated by space: ")
         self.operator = self.get_operator()
         if self.operator in ["+", "-", "*", "/", "^", "%", "p%", "divmod"]:
             self.numbers2 = self.get_numbers("Enter the second number(s), separated by space: ")
         else:
-            self.numbers2 = []
+            self.numbers2 = np.array([])
+
         try:
             if self.operator == "+":
-                result = sum(self.numbers1 + self.numbers2)
+                result = np.sum(np.concatenate((self.numbers1, self.numbers2)))
             elif self.operator == "-":
-                result = self.numbers1[0]
-                for num in self.numbers1[1:] + self.numbers2:
-                    result -= num
+                if self.numbers2.size > 0:
+                    result = np.subtract(self.numbers1, self.numbers2)
+                else:
+                    result = np.diff(self.numbers1)
             elif self.operator == "*":
-                result = 1
-                for num in self.numbers1 + self.numbers2:
-                    result *= num
+                result = np.prod(np.concatenate((self.numbers1, self.numbers2)))
             elif self.operator == "/":
-                result = self.numbers1[0]
-                for num in self.numbers1[1:] + self.numbers2:
-                    result /= num
+                if self.numbers2.size > 0:
+                    result = np.divide(self.numbers1, self.numbers2)
+                else:
+                    result = np.divide.reduce(self.numbers1)
             elif self.operator == "^":
-                result = self.numbers1[0]
-                for num in self.numbers1[1:] + self.numbers2:
-                    result **= num
+                if self.numbers2.size > 0:
+                    result = np.power(self.numbers1, self.numbers2)
+                else:
+                    result = np.power.reduce(self.numbers1)
             elif self.operator == "%":
-                if len(self.numbers1) == 1 and len(self.numbers2) == 1:
+                if self.numbers1.size == 1 and self.numbers2.size == 1:
                     result = (self.numbers1[0] / self.numbers2[0]) * 100
                     print(f"{result}%")
                     return
@@ -85,49 +97,49 @@ class Calculator:
                     print("Percentage requires one number in each set.")
                     return
             elif self.operator == "p%":
-                if len(self.numbers1) == 1 and len(self.numbers2) == 1:
+                if self.numbers1.size == 1 and self.numbers2.size == 1:
                     result = self.numbers1[0] * (self.numbers2[0] / 100)
                 else:
                     print("Percentage of a number requires one number in each set.")
                     return
             elif self.operator == "min":
-                result = min(self.numbers1)
+                result = np.min(self.numbers1)
             elif self.operator == "max":
-                result = max(self.numbers1)
+                result = np.max(self.numbers1)
             elif self.operator == "sqrt":
-                result = [math.sqrt(num) for num in self.numbers1]
+                result = np.sqrt(self.numbers1)
             elif self.operator == "app.":
-                result = round(sum(self.numbers1) / len(self.numbers1))
+                result = round(np.mean(self.numbers1))
             elif self.operator == "sin":
-                result = [round(math.sin(math.radians(num)), 2) for num in self.numbers1]
+                result = np.round(np.sin(np.radians(self.numbers1)), 2)
             elif self.operator == "cos":
-                result = [round(math.cos(math.radians(num)), 2) for num in self.numbers1]
+                result = np.round(np.cos(np.radians(self.numbers1)), 2)
             elif self.operator == "tan":
-                result = [round(math.tan(math.radians(num)), 2) for num in self.numbers1]
+                result = np.round(np.tan(np.radians(self.numbers1)), 2)
             elif self.operator == "deg to rad":
-                result = [math.radians(num) for num in self.numbers1]
+                result = np.radians(self.numbers1)
             elif self.operator == "rad to deg":
-                result = [math.degrees(num) for num in self.numbers1]
+                result = np.degrees(self.numbers1)
             elif self.operator == "!":
-                if len(self.numbers1) == 1 and self.numbers1[0] >= 0 and self.numbers1[0].is_integer():
+                if self.numbers1.size == 1 and self.numbers1[0] >= 0 and self.numbers1[0].is_integer():
                     result = math.factorial(int(self.numbers1[0]))
                 else:
                     print("Factorial requires a single non-negative integer.")
                     return
             elif self.operator == "log_10":
-                result = [math.log10(num) for num in self.numbers1 if num > 0]
+                result = np.log10(self.numbers1[self.numbers1 > 0])
             elif self.operator == "log":
-                result = [math.log(num) for num in self.numbers1 if num > 0]
+                result = np.log(self.numbers1[self.numbers1 > 0])
             elif self.operator == "abs":
-                result = [abs(num) for num in self.numbers1]
+                result = np.abs(self.numbers1)
             elif self.operator == "divmod":
-                if len(self.numbers1) == 1 and len(self.numbers2) == 1:
+                if self.numbers1.size == 1 and self.numbers2.size == 1:
                     result = divmod(int(self.numbers1[0]), int(self.numbers2[0]))
                 else:
                     print("Divmod requires one number in each set.")
                     return
             elif self.operator == "sort":
-                result = sorted(self.numbers1)
+                result = np.sort(self.numbers1)
             elif self.operator == "is even":
                 for num in self.numbers1:
                     if num % 2 == 0:
@@ -141,13 +153,14 @@ class Calculator:
             print(result)
         except Exception as exc:
             print(f"Calculation error: {exc}")
+
 def main():
     """Main loop for the calculator program."""
     while True:
         try:
             continue_or_not = input("Press Enter to continue or 'e' to exit: ")
-            if continue_or_not == "e" or continue_or_not == "E":
-                print('Ok.. Bye Bye')
+            if continue_or_not.lower() == "e":
+                print('Quitting... Goodbye!')
                 break
             area_choice = input("Do you want to calculate the area of a shape? (y/n): ").strip().lower()
             if area_choice == "y":
@@ -159,5 +172,6 @@ def main():
             print('Invalid input... Please try again')
         except Exception as e:
             print(f'Unknown Error: {e} ... Please try again')
+
 if __name__ == "__main__":
     main()
