@@ -73,10 +73,62 @@
 // }
 
 
-int main(void){
-    for (int i = 0; i <= 10; i += 2)
-    {
-        printf("%i\n", i);
-    }
+// int main(void){
+//     for (int i = 0; i <= 10; i += 2)
+//     {
+//         printf("%i\n", i);
+//     }
     
-}
+// }
+
+// void sum(int x, int y){
+//     printf("%i\n", x + y);
+// }
+// int main(void){
+//     sum(5, 5);
+// }
+
+
+// float discount(float price, int percent){
+//     return price * (100 - percent) / 100.0;
+// }
+
+// int main(void){
+//     float regular = get_float("enter regular price: ");
+//     int percent = get_int("enter discount percentage: ");
+//     float sale = discount(regular, percent);
+//     printf("sale price: %.1f\n", sale);
+//     return 0;
+// }
+
+
+// int main(void){
+//     printf("Name:\tAhmed\n");
+//     printf("Age:\t20\n");
+//     printf("Country:\tEgypt\n");
+//     return 0;
+// }
+
+
+//section cs 3!!
+// int main(void){
+//     float length,width,area;
+//     printf("Enter the length: ");
+//     scanf("%f", &length);
+//     printf("Enter the width: ");
+//     scanf("%f", &width);
+//     area = length * width;
+//     printf("the area is: %f\n", area);
+//     return 0;
+// }
+
+// int main(void){
+//     int n,first,second;
+//     first = 0;
+//     second = 1;
+//     printf("Enter the nth term: ");
+//     scanf("%d", &n);
+//     printf("%d\n", first);
+//     printf("%d\n", second);
+// }
+
