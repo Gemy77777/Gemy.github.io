@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>إنشاء حساب - جامعة 6 أكتوبر التكنولوجية</title>
+<style>
+/* افتراضيات بسيطة للألوان والخطوط */
+:root {
+  --o6u-blue: #0b3d91; /* لون أزرق لـ O6U */
+  --o6u-accent: #ff8c00; /* لون ثانوي لزر الدكتور */
+  --o6u-green-logo: #008000; /* لون أخضر داكن لخلفية اللوجو */
+  --muted: #6c757d;
+  --main-bg: #f8f9fa; /* خلفية خفيفة */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Arabic Kufi', Tahoma, Arial, sans-serif; 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--main-bg);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* ستايلات الهيدر (الأزرق والأبيض) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white; 
+  color: var(--o6u-blue); 
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.header .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .logo {
+  height: 56px;
+  width: 56px;
+  border-radius: 8px;
+  background: var(--o6u-white);
+  padding: 6px;
+}
+.header nav a {
+  text-decoration: none;
+  color: var(--o6u-blue); 
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.header nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* ستايلات الفوتر (الأبيض والرمادي) */
+.site-footer {
+  padding: 15px 0;
+  text-align: center;
+  color: var(--muted); 
+  background-color: white; 
+  margin-top: auto;
+  border-top: 1px solid #eee;
+}
+
+/* ستايلات صفحة إنشاء حساب المقسومة */
+.register-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.register-container {
+  display: flex;
+  max-width: 900px; 
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(11,61,145,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 7%;
+}
+
+/* لوحة الشعار - خلفية خضراء وتنسيق النصوص */
+.logo-panel {
+  flex: 1;
+  background-color: #003880; /* اللون الأخضر المطلوب */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+.logo-panel .logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.logo-panel h2 {
+    font-size: 1.8rem; 
+    margin-bottom: 15px; /* المسافة المطلوبة */
+}
+.logo-panel p {
+    font-size: 0.9rem; 
+    font-weight: 300; 
+    direction: ltr; /* تصحيح ترتيب الرقم 6 */
+}
+.register-form-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome-text {
+  color: var(--o6u-blue); 
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ستايلات النماذج والأزرار */
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+/* أزرار اختيار الدور */
+.btn-primary {
+  background-color: var(--o6u-blue); 
+  color: white;
+}
+.btn-accent {
+  background-color: var(--o6u-accent);
+  color: white;
+}
+/* حقل كلمة المرور مع زر الإظهار */
+.password-input-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+.toggle-password {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+/* الاستجابة للهواتف المحمولة */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+        width: 95%;
+        margin: 20px auto;
+    }
+    .logo-panel {
+        padding: 30px;
+    }
+    .register-form-panel {
+        padding: 30px;
+    }
+    .header {
+        padding: 10px 15px;
+    }
+}
+</style>
+<link href="common.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header class="header">
+  <div class="brand container" style="margin: 0; padding: 0;">
+    <img class="logo" src="assests/photo.webp" alt="logo"/>
+    <div><strong>جامعة ٦ أكتوبر التكنولوجية</strong></div>
+  </div>
+  <nav>
+    <a href="login.html">تسجيل الدخول</a> 
+  </nav>
+</header>
+
+<main class="register-wrapper">
+  <div class="register-container">
+    <div class="logo-panel">
+      <img class="logo" src="assests/photo.webp" alt="شعار جامعة ٦ أكتوبر التكنولوجية"/>
+      <h2>جامعة ٦ أكتوبر التكنولوجية</h2>
+      <p>6 OCTOBER TECHNOLOGICAL UNIVERSITY</p>
+    </div>
+
+    <div class="register-form-panel">
+      <h2 style="color:var(--o6u-blue); text-align:center">إنشاء حساب جديد</h2>
+      
+      <p style="color:var(--muted); text-align:center; margin-bottom: 15px;">اختر نوع الحساب ثم املأ البيانات</p>
+
+      <div style="display:flex;gap:12px;margin:14px 0;">
+        <button id="roleStudent" class="btn btn-primary" style="flex:1">طالب</button>
+        <button id="roleStaff" class="btn btn-accent" style="flex:1">دكتور</button>
+      </div>
+
+      <form id="registerForm" onsubmit="event.preventDefault(); location.href='login.html'">
+        <input class="input" type="text" placeholder="الاسم الكامل" required/>
+        <input class="input" type="email" placeholder="البريد الإلكتروني" required/>
+
+        <div class="password-input-wrapper">
+          <input id="passwordInput" class="input" type="password" placeholder="كلمة المرور" required style="margin-bottom:0"/>
+          <span id="togglePassword" class="toggle-password">👁️</span>
+        </div>
+
+        <div style="margin-top:20px">
+          <button type="submit" class="btn btn-primary" style="width:100%;">إنشاء حساب جديد</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  © 2025 O6U SmartClass
+</footer>
+
+<script>
+// جافاسكريبت للعين (إظهار/إخفاء كلمة المرور)
+document.getElementById('togglePassword').addEventListener('click', function() {
+    const passwordInput = document.getElementById('passwordInput');
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️️' : '🙈';
+});
+
+// جافاسكريبت لأزرار الدور
+document.getElementById('roleStudent').addEventListener('click', ()=>{ alert('تم اختيار: طالب') })
+document.getElementById('roleStaff').addEventListener('click', ()=>{ alert('تم اختيار: دكتور') })
+</script>
+</body>
+</html>
