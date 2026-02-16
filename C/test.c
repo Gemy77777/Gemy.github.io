@@ -1,18 +1,15 @@
 #include <stdio.h>
 int main(void){
-int n, original, reversed = 0, remainder;
-printf("enter number ");
-scanf("%d", &n);
-original = n;
-while (n != 0){
-    remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n /= 10;
+char i = 'A';
+char j = 'a';
+printf("The uppercase letters are: \n");
+for (; i <= 'Z'; i++){
+    printf("%c ", i);
 }
-if (original == reversed){
-    printf("%d is a palindrome.\n", original);
-} else {
-    printf("%d is not a palindrome.\n", original);
+printf("\n");
+printf("The lowercase letters are: \n");
+for (; j <= 'z'; j++){
+    printf("%c ", j);
 }
 return 0;
 }

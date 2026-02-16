@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/gamaleldin/Repository/Gemy.github.io/C",
-      "program": "/home/gamaleldin/Repository/Gemy.github.io/C/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "c:/Users/GAMALELDIN/Documents/Gemy.github.io/C/output",
+      "program": "c:/Users/GAMALELDIN/Documents/Gemy.github.io/C/output/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

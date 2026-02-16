@@ -32,7 +32,7 @@ text = "Hello"
 for char in text:
     print(char)
     
-#q8
+#q8 
 n = 3
 for i in range(1, 11):
     print(f"{n} x {i} = {n * i}")
