@@ -1,0 +1,20 @@
+from Crypto.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+import os
+import os.path
+
+# pair_keys = RSA.generate(2048)
+# public_key = pair_keys.publickey().export_key()
+# private_key = pair_keys.export_key()
+
+public_key = b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx9+8yugZ7sk38+2I81fe\nhSscMMEf4av00txm0iX8oXdeQ9dZggyP1q803aEPojtdefmjka2I2yyR9VQyEpg+\nJbn4qBSayoz7XwIhF4m7jQGR3j1oIk9BU/2lICpP3vO4FWlKV+olfj/kzoE6G7RZ\nuIS9I4l3ID/MukEXL1ePvPdzqrAyxUU+vxYgJuUPV8ITFC/SVSkCcGWYRundZcDL\nb1mrnXJ6mG00qp1zlRVwC5wUvkHfKyqle8iUBaz6CSAVDQfTZvJY0L6EpDQbuylw\n4nSgevQyR0150zBCAtxVicjfY5lyGCqLq3zEmmbLiN9wpg/T66beDZUlu7W1pfW1\nYQIDAQAB\n-----END PUBLIC KEY-----'
+private_key = b'-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAx9+8yugZ7sk38+2I81fehSscMMEf4av00txm0iX8oXdeQ9dZ\nggyP1q803aEPojtdefmjka2I2yyR9VQyEpg+Jbn4qBSayoz7XwIhF4m7jQGR3j1o\nIk9BU/2lICpP3vO4FWlKV+olfj/kzoE6G7RZuIS9I4l3ID/MukEXL1ePvPdzqrAy\nxUU+vxYgJuUPV8ITFC/SVSkCcGWYRundZcDLb1mrnXJ6mG00qp1zlRVwC5wUvkHf\nKyqle8iUBaz6CSAVDQfTZvJY0L6EpDQbuylw4nSgevQyR0150zBCAtxVicjfY5ly\nGCqLq3zEmmbLiN9wpg/T66beDZUlu7W1pfW1YQIDAQABAoIBAAzPpyGNAEyGkpLi\nAMsy200cgZwRD41pdjHQdWQMPJsk3uKTpRBpjwwAWEUfE7TJqqjXesfVoFYGufxI\nP0VjLhNA+P0yWjxCuRdSjZ3H8uuLfuFd0j+Qu5aPRXbq/1+XrjmWcXDHzfYU+6zO\nKlP9mq/xt3sq+SW/W8ynFhNaFhkog4LqJ3ug7MHWHb9sGxvd6833UYpranGz2Rbg\n+G5bg6KsBMsBR0q1a73YlCIAqETwvTRqpYEcD/2SgV13eY18FeENKvv2/IIBhaZX\nRk1XrOXjFbTYbZbpjh8K56WSNMpw9o3FdMJRqTjUCx472IpSqwSheI0eK9vHqh59\n//fk7KECgYEA01+0c7qFptU3PMWE5bR+LzK/98khPyGWS44tMI56pA9L/g24omj7\n8p3OgxElNrmaE0pDIAyH1Uxbglb9IsbcZiIx9uFmyP5Ab/Si8mvJUr9O77NARRuM\n7er6ryDX4VyxUrQClvXgldUdAjwCl8u2/iBQ9iWgSbX3YUe+oE/1ng0CgYEA8hJ9\nU6yWX2TCWgsrwpsJPh+SF8pBZxgli9rHr9kGPuNDixYzq9HfSwhxDGRIAWZCt830\noog3FKqfOo5q1QwMJG1FLmZ3VzT5XlqEFJeyDPpl3iAu9q1zIH1VoNR/QGqovFbG\nW+Y25JTDYi8puy8WfTW34y6PMbMEzq6LTv6Dc6UCgYBzEvRr2MzwYb27wRCz+YqE\n6Y0nOgF2nDN1mMazW64a6RUHD7NH//3CPPVz1366B1uBSvm2VfwRPIvJLtCLAVZ1\n6AHplRbfL8Qm7zlS3ylweiRgTOcdeH1F/ZpSg3/j+hGzo7qRMvT8vVQYplEHEOnj\n+fX5u8xCtOUjuepm3oEqdQKBgBjEHYBfCu9tjpjJxcteMz7g2gCHF9PlW4oIcx+h\nk4sBk1p6hgTRLwgtL+u1osxJ2w+VCa9LQl9h6XKDOZjcZ62eZFKP9yu75rtphVPa\nBURgpeVo44UnT70GNamDtBUyFFtYgWjLj9gpBChabOmSsrlSsqKSk+Hgz+AZaXVG\ngsplAoGBALm3X7kTyKB96Ko7Xm6jWCR9CncqkSb/9Mif/OSV0NiqMlGDwlFTOz0V\n1laEJ7dBKQfftltTDj6ZhYyIVjYO/5+YcHh3goQa1hwQlKcgJO/qWxHX96kyi4rK\n6IKIRP7gjQ2iQuur1EoHT5mFvHEKFr+p2BnO+IOadF7+w6ZNVBPc\n-----END RSA PRIVATE KEY-----'
+public_key = RSA.import_key(public_key)
+private_key = RSA.import_key(private_key)
+
+func_of_enc = PKCS1_OAEP.new(public_key)    
+func_of_dec = PKCS1_OAEP.new(private_key)
+
+
+
+

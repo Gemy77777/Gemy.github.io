@@ -4,11 +4,14 @@
 </head>
 <body>
     <?php
-    
-    echo "Hello World!";
-
-
-
+    $server = "localhost";
+    $username = "root";
+    $password = "giyu2112001";
+    $connection = mysqli_connect($server, $username, $password);
+    if (!$connection) {
+    die("Connection failed");
+    }
+    echo "Connected successfully";
     ?>
 </body>
 </html>
