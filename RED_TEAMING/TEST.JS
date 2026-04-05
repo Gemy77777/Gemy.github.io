@@ -1,0 +1,1 @@
+<input type=text placeholder='Search the blog...' name=search value="test11"></input>

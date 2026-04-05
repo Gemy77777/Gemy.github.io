@@ -42,7 +42,6 @@ class ShapeCalculator:
 
 class Calculator:
     """Handles general mathematical operations using numpy arrays for performance."""
-
     def __init__(self):
         self.numbers1 = np.array([])
         self.numbers2 = np.array([])
