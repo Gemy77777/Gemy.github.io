@@ -1,28 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <string.h>
-
-
-int main(void){
-int arr[10] = {};
-int size = sizeof(arr) / sizeof(arr[0]);
-int evenCount = 0;
-int oddCount = 0;
-int *ptr = arr;
-for (int i = 0; i < size; i++) {
-    printf("enter number %d: ", i + 1);
-    scanf("%d", *(ptr + i));
+#include <stdbool.h>
+int main(){
+FILE *p;
+char ch;
+char Filename[100];
+printf("Enter the name of the file to read: ");
+gets(Filename);
+p = fopen(Filename, "r");
+if (p == NULL) {
+    printf("Error opening file.\n");
+    return 1;
 }
-for (int i = 0; i < size; i++) {
-        if (*(ptr + i) % 2 ==0) {
-            evenCount++;
-        } else {
-            oddCount++;
-        }
-    }
-
-printf("even numbers: %d\n", evenCount);
-printf("odd numbers: %d\n", oddCount);
+while (1){
+ch = fgetc(p);
+if (ch == EOF){
+    break;
+}
+printf("%c", ch);
+}
+fclose(p);
 return 0;
 }
