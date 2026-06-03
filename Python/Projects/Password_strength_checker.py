@@ -1,5 +1,5 @@
 import string
-password = input("Enter your password: ")
+password = input("Enter your password: ")   
 if len(password) < 8 or len(password) > 32:
     print("Error: Password must be between 8 and 32 characters long.")
     print("Strength Level: WEAK")

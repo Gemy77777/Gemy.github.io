@@ -3,7 +3,11 @@
 #include <string.h>
 #include <stdbool.h>
 
+typedef struct haneen {
+    int value;
+};
+
 int main(){
-char name[50] = {"Abdelrahman"};
+
 return 0;
 }
