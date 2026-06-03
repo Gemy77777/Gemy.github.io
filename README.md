@@ -14,8 +14,8 @@
 
 ## 🚀 About Me  
 - 👨‍🎓 Computer Science student passionate about **Cybersecurity & Ethical Hacking**  
-- 🐍 Have a good background in **Python**
-- 🌐 Learning **Networking, Linux, Web Security**  
+- 🐍 Have a good background in **Python ,Networking and cybersecurity**
+- 🌐 Learning **Web Security, Redteaming**  
 - 🔒 Exploring **Vulnerability Assessment, Exploit Development & Pentesting**  
 - 🧑‍💻 Building labs for **red teaming & exploit testing**  
 - 📝 Documenting findings in **professional pentest reports**  
@@ -73,10 +73,10 @@
 
 ---
 
-## 🌟 Goals for 2025  
-- ✅ Finish **CompTIA Security+** by mid-2025 and other certeficates  
+## 🌟 Goals for 2026/2027
+- ✅ Finish **ejptv2 and REDTEAMING COURSE** by mid-2026 and other certificates  
 - ✅ Reach **Top 1% on TryHackMe**  
-- ✅ Publish **3+ security writeups** on Medium/GitHub  
+- ✅ Publish **security writeups** on Medium/GitHub  
 - ✅ Build real-world **pentesting labs & automation tools**  
 - ✅ Contribute to **open source security projects**  
 - 🎯 Land a **penetration testing internship**  
