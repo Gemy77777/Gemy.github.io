@@ -154,7 +154,6 @@ class Calculator:
             print(f"Calculation error: {exc}")
 
 def main():
-    """Main loop for the calculator program."""
     while True:
         try:
             continue_or_not = input("Press Enter to continue or 'e' to exit: ")
