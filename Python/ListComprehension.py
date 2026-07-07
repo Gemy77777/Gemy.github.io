@@ -1,8 +1,8 @@
 # the golden rule -> [expression for item in iterable if condition]
 
 # example 1
-# squares = [x*x for x in range(1,11)]
-# print(squares)
+squares = [x*x for x in range(1,11)]
+print(squares)
 
 # example 2
 
